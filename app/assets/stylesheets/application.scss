@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bourbon';
+@import 'neat';
+
+body {
+	background-color: #f39c12;
+
+	@import 'header';
+
+	div.slider {
+		margin:  0 20%;
+
+		div.first_slider {
+			background-size: cover;
+			height: 500px;
+		}
+	}	
+}
