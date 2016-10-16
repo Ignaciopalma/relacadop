@@ -1,6 +1,8 @@
 header {
 	div.logo {
 		@include outer-container;
+
+		margin-bottom: 45px;
 		
 		img.logotipo {
 			@include span-columns(3);
@@ -11,6 +13,8 @@ header {
 
 		img.dibujo_ninos {
 			@include span-columns(9);
+
+			margin-top: 62px;
 		}
 	}
 	

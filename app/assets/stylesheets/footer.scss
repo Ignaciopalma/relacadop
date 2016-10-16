@@ -1,15 +1,12 @@
 footer {
-	@include outer-container;
-
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,05abe0+100 */
+	@include outer-container(100%);
 	background-color: $marron;
-	background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
-	radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
-	background-size:80px 80px;
-	background-position:0 0, 40px 40px;
+	padding: 5%;
 
 	div.footer_columns {
 		@include span-columns(3);
 		@include omega();
+		text-align: center;
+		color: $fondo_blanco;
 	}
 }

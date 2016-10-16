@@ -28,50 +28,162 @@ $celeste: rgb(102, 204, 204);
 $fondo-blanco: #ecf0f1;
 
 body {
-	@include outer-container;
+	@include outer-container(100%);
 	background-color: $fondo-blanco;
 
 	@import 'header';
 
-	div.slider {
-		margin:  0 12%;
-
-		div.first_slider {
-			background-size: cover;
-			height: 300px;
-		}
-	}
-
-	div.index_noticias {
-		margin: 10px 12%;
-		div.noticia {
-			@include outer-container;
-
-			img {
-				@include span-columns(3);
-				width: 180px;
-			}
-
-			p {
-				@include span-columns(9);
-			}
-		}
-	}
-	
 	section.index_section {
-		div.parallax_image {
-				    /* The image used */
-		    background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/10.jpg");
+		div.slider {
+			margin:  0 12%;
+
+			div.first_slider {
+				background-size: cover;
+				height: 300px;
+			}
+		}
+
+		div.index_noticias {
+			margin: 40px 12%;
+			div.noticia {
+				@include outer-container;
+
+				img {
+					@include span-columns(3);
+					width: 180px;
+				}
+
+				p {
+					@include span-columns(9);
+					border-left: 1px solid $marron;
+					padding-left: 20px;
+				}
+			}
+		}
+
+		div.parallax_image_2 {
+			/* The image used */
+		    background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/4.jpg");
 
 		    /* Set a specific height */
-		    height: 500px; 
+		    height: 350px; 
 
 		    /* Create the parallax scrolling effect */
 		    background-attachment: fixed;
 		    background-position: center;
 		    background-repeat: no-repeat;
 		    background-size: cover;
-		}		
+		}
+		
+		div.index_video {
+			margin: 100px 0;
+			h2 {
+				text-align: center;
+
+			}
+
+			iframe {
+				margin: 20px 30%;
+			}
+		}
+
+		div.parallax_image {
+				    /* The image used */
+		    background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/10.jpg");
+
+		    /* Set a specific height */
+		    height: 350px; 
+
+		    /* Create the parallax scrolling effect */
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}	
+
+		div.index_colaboradores {
+			height: 450px;
+			margin: 100px 25%;;
+
+			h2 {
+				text-align: center;
+			}
+
+			div.first_row {
+				@include span-columns(12);
+				img {
+					@include span-columns(4);
+				}
+			}
+
+			div.second_row {
+				@include span-columns(12);
+				img {
+					@include span-columns(4);
+				}
+			}
+		}	
+
+
+	}
+
+
+
+	section.equipo {
+		h1 {
+			text-align: center;
+		}
+
+		div.boss {
+			div.integrante_del_equipo {
+				img {
+					border-radius: 100%;
+				    width: 21%;
+				    margin: 0 39%;
+				}
+
+				h4 {
+					text-align: center;
+				}
+
+				p {
+					text-align: center;
+				}
+			}	
+		}
+
+		div.managers {
+			@include outer-container;
+
+			div.integrante_del_equipo {
+				@include span-columns(4);
+				@include omega();
+				img {
+					border-radius: 100%;
+				    width: 60%;
+				    margin: 0 19%;
+				}
+
+				h4 {
+					text-align: center;
+				}
+
+				p {
+					text-align: center;
+				}
+			}	
+		}
+
+		div.everybody {
+			height: 600px;
+			width: 100%;
+			background-image: url('/assets/foto_equipo.png');
+			background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		
 	}
 
 
