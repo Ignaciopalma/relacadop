@@ -1,0 +1,3 @@
+class MarcoLegalController < ApplicationController
+	
+end

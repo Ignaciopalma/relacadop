@@ -1,5 +1,25 @@
-	header {
-		nav {
+header {
+	div.logo {
+		@include outer-container;
+		
+		img.logotipo {
+			@include span-columns(3);
+			width: 12em;
+		    margin-top: 2em;
+    		margin-left: 3em;
+		}
+
+		img.dibujo_ninos {
+			@include span-columns(9);
+		}
+	}
+	
+	nav {
+		@include outer-container;
+
+		div.nav_lista {
+			@include span-columns(12);
+
 			ul#menu, ul#menu ul {
 		    	margin: 0;
 		    	padding: 0;
@@ -7,13 +27,12 @@
 			}
 
 			ul#menu {
-			    width: 960px;
-			    margin: 60px auto;
-			    border: 1px solid #222;
-			    background-color: #111;
-			    background-image: linear-gradient(#444, #111);
+			    width: 85%;
+			    margin: 10px 9%;
+			    border: 1px solid $fondo-blanco;
+			    background-color: $fondo-blanco;
 			    border-radius: 6px;
-			    box-shadow: 0 1px 1px #777;
+			    margin-top: 0;
 			}
 
 			ul#menu:before,
@@ -32,32 +51,119 @@
 
 			ul#menu li {
 			    float: left;
-			    border-right: 1px solid #222;
-			    box-shadow: 1px 0 0 #444;
+			    border-right: 1px solid $fondo-blanco;
 			    position: relative;
+			    letter-spacing: 1.5px;
+			    width: 200px;
+			}
+
+			li.link_inicio {
+				background: $marron;
+				border-top-left-radius: 10px;
+    			border-bottom-left-radius: 10px;
+			}
+
+			li.link_quienes_somos {
+			    background: $naranjo;
+
+			    ul a:hover {
+			    	background-color: rgb(255, 80, 51);
+				}
+
+				ul li:first-child > a:after {
+				    content: '';
+				    position: absolute;
+				    left: 40px;
+				    top: -6px;
+				    border-left: 6px solid transparent;
+				    border-right: 6px solid transparent;
+				    border-bottom: 6px solid $naranjo;
+				}
+			}
+
+
+
+			li.link_marco_legal {
+			    background: $amarillo;
+
+			    ul a:hover {
+			    	background-color: rgb(255, 180, 102);
+				}
+
+				ul li:first-child > a:after {
+				    content: '';
+				    position: absolute;
+				    left: 40px;
+				    top: -6px;
+				    border-left: 6px solid transparent;
+				    border-right: 6px solid transparent;
+				    border-bottom: 6px solid $amarillo;
+				}
+			}
+
+			li.link_actualidad {
+				background: $rosado;
+
+			    ul a:hover {
+			    	background-color: rgb(204, 80, 153);
+				}
+
+				ul li:first-child > a:after {
+				    content: '';
+				    position: absolute;
+				    left: 40px;
+				    top: -6px;
+				    border-left: 6px solid transparent;
+				    border-right: 6px solid transparent;
+				    border-bottom: 6px solid $rosado;
+				}
+			}
+
+			li.link_tu_parte {
+				background: $celeste;
+				border-top-right-radius: 10px;
+    			border-bottom-right-radius: 10px;
+
+			    ul a:hover {
+			    	background-color: rgb(102, 180, 204);
+				}
+
+				ul li:first-child > a:after {
+				    content: '';
+				    position: absolute;
+				    left: 40px;
+				    top: -6px;
+				    border-left: 6px solid transparent;
+				    border-right: 6px solid transparent;
+				    border-bottom: 6px solid $celeste;
+				}
+			}
+
+			li.link_tu_parte {
+				ul {
+					li {
+						border-radius: 0;
+					}
+				}
 			}
 
 			ul#menu a {
 			    float: left;
 			    padding: 12px 30px;
-			    color: #999;
+			    color: $fondo-blanco;
 			    text-transform: uppercase;
 			    font: bold 12px Arial, Helvetica;
 			    text-decoration: none;
 			    text-shadow: 0 1px 0 #000;
 			}
 
-			ul#menu li:hover > a {
-			    color: #fafafa;
-			}
-
 			ul#menu ul {
-			    margin: 20px 0 0 0;
+			    margin: 30px 0 0 0;
 			    _margin: 0; /*IE6 only*/
 			    opacity: 0;
 			    visibility: hidden;
 			    position: absolute;
-			    top: 38px;
+			    top: 39px;
 			    left: 0;
 			    z-index: 1;    
 			    background: #444;   
@@ -65,6 +171,7 @@
 			    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
 			    border-radius: 3px;
 			    transition: all .2s ease-in-out;
+			    width: 100%;
 			}
 
 			ul#menu li:hover > ul {
@@ -95,7 +202,7 @@
 
 			ul#menu ul a {    
 			    padding: 10px;
-			    width: 130px;
+			    width: 100%;
 			    _height: 10px; /*IE6 only*/
 			    display: block;
 			    white-space: nowrap;
@@ -103,23 +210,8 @@
 			    text-transform: none;
 			}
 
-			ul#menu ul a:hover {
-			    background-color: #0186ba;
-			    background-image: linear-gradient(#04acec, #0186ba);
-			}
-
 			ul#menu ul li:first-child > a {
 			    border-radius: 3px 3px 0 0;
-			}
-
-			ul#menu ul li:first-child > a:after {
-			    content: '';
-			    position: absolute;
-			    left: 40px;
-			    top: -6px;
-			    border-left: 6px solid transparent;
-			    border-right: 6px solid transparent;
-			    border-bottom: 6px solid #444;
 			}
 
 			ul#menu ul ul li:first-child a:after {
@@ -146,3 +238,4 @@
 			}
 		}
 	}
+}

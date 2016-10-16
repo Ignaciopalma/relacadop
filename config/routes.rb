@@ -2,9 +2,13 @@ Rails.application.routes.draw do
 
   root "pages#index"
 
+  get 'pages/equipo' => 'pages#equipo'
   get "pages/primera_acta" => 'pages#primera_acta'
   get "pages/mision" => 'pages#mision'
   get "pages/como_nace" => 'pages#como_nace'
+  get 'pages/colaboradores' => 'pages#colaboradores'
+
+  get 'marco_legal/convenio_haya' => 'marco_legal#convenio_haya'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

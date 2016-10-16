@@ -10,24 +10,70 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
+@import 'slick-theme';
+@import 'slick';
 @import 'bourbon';
 @import 'neat';
 
+// VARIABLES
+
+$amarillo: rgb(255, 204, 102);
+$naranjo: rgb(255, 102, 51);
+$marron: rgb(153, 0, 0);
+$rosado: rgb(204, 102, 153);
+$celeste: rgb(102, 204, 204);
+$fondo-blanco: #ecf0f1;
+
 body {
-	background-color: #f39c12;
+	@include outer-container;
+	background-color: $fondo-blanco;
 
 	@import 'header';
 
 	div.slider {
-		margin:  0 20%;
+		margin:  0 12%;
 
 		div.first_slider {
 			background-size: cover;
-			height: 500px;
+			height: 300px;
 		}
-	}	
+	}
+
+	div.index_noticias {
+		margin: 10px 12%;
+		div.noticia {
+			@include outer-container;
+
+			img {
+				@include span-columns(3);
+				width: 180px;
+			}
+
+			p {
+				@include span-columns(9);
+			}
+		}
+	}
+	
+	section.index_section {
+		div.parallax_image {
+				    /* The image used */
+		    background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/10.jpg");
+
+		    /* Set a specific height */
+		    height: 500px; 
+
+		    /* Create the parallax scrolling effect */
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}		
+	}
+
+
+	@import 'footer';	
 }

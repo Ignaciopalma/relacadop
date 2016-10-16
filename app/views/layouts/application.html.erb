@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html class="no-skrollr">
 <head>
 	<title>Relacadop</title>
-	<link rel="stylesheet" href="/assets/normalize.css">
-	<link rel="stylesheet" type="text/css" href="/assets/slick-carousel/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="/assets/slick-carousel/slick-theme.css"/>
+	<link rel="stylesheet" href="/assets/normalize.min.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="/assets/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/assets/slick-theme.css"/>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 </head>
 
 <body>
+	<%= render 'layouts/header' %>
 
-<%= render 'layouts/header' %>
+	<%= yield %>
 
-<%= yield %>
-
-<%= render 'layouts/footer' %>
+	<%= render 'layouts/footer' %>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

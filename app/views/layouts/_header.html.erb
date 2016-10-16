@@ -1,61 +1,68 @@
 <header>
+    <div class="logo">
+        <img src="https://s3-us-west-2.amazonaws.com/relacadop/Logo-Relac-Adop.png" alt="logo" class="logotipo">
+        <img src="/assets/pendex.svg" alt="pendex_svg" class="dibujo_ninos w3-animate-right">
+    </div>
     <nav>
-        <ul id="menu">
-            <li><%= link_to "Inicio", root_path %></li>
-            <li>
-                <%= link_to "Quienes Somos", pages_primera_acta_path %>
-                <ul>
-                    <li><a href="#">Como nace</a></li>
-                    <li><a href="#">Equipo</a></li>
-                    <li><%= link_to "Misión", pages_mision_path %>
-                    	<ul>
-                    		<li><a href="">Hola</a></li>
-                    		<li><a href="">Chao</a></li>
-                    		<li><a href="">Bueno</a></li>
-                    	</ul></li>
-                    <li><a href="#">Web design</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Marco Legal</a>
-                <ul>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">Graphic design</a></li>
-                    <li><a href="#">Development tools</a>
-                    	<ul>
-                    		<li><a href="">Hola</a></li>
-                    		<li><a href="">Chao</a></li>
-                    		<li><a href="">Bueno</a></li>
-                    	</ul></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Actualidad</a>
-                <ul>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Actividades</a></li>
-                    <li><a href="#">Columna de Opinion</a>
-                    	<ul>
-                    		<li><a href="">Hola</a></li>
-                    		<li><a href="">Chao</a></li>
-                    		<li><a href="">Bueno</a></li>
-                    	</ul></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Tu Parte</a>
-                <ul>
-                    <li><a href="#">Adopcion</a></li>
-                    <li><a href="#">Voluntariado</a></li>
-                    <li><a href="#">Como formar parte</a></li>
-                    	<ul>
-                    		<li><a href="">Hola</a></li>
-                    		<li><a href="">Chao</a></li>
-                    		<li><a href="">Bueno</a></li>
-                    	</ul></li>
-                </ul>
-            </li>
-        </ul>
+        <div class="nav_lista">
+            <ul id="menu">
+                <li class="link_inicio"><%= link_to "Inicio", root_path %></li>
+                <li class="link_quienes_somos">
+                    <%= link_to "Quienes Somos" %>
+                    <ul>
+                        <li class="link_quienes_somos"><%= link_to "Como Nace", pages_como_nace_path %></li>
+                        <li class="link_quienes_somos"><%= link_to "Equipo", pages_equipo_path %></li>
+                        <li class="link_quienes_somos"><%= link_to "Misión", pages_mision_path %>
+                            <ul>
+                                <li><a href="">Hola</a></li>
+                                <li><a href="">Chao</a></li>
+                                <li><a href="">Bueno</a></li>
+                            </ul></li>
+                        <li class="link_quienes_somos"><%= link_to "Primera Acta", pages_primera_acta_path %></li>
+                        <li class="link_quienes_somos"><%= link_to "Colaboradores", pages_colaboradores_path %></li>
+                    </ul>
+                </li>
+                <li class="link_marco_legal">
+                    <a href="#">Marco Legal</a>
+                    <ul>
+                        <li class="link_marco_legal"><a href="#">Ley de Adopcion</a></li>
+                        <li class="link_marco_legal"><%= link_to "Convenio de la Haya", marco_legal_convenio_haya_path %></li>
+                        <li class="link_marco_legal"><a href="#">Codigo de la Infancia</a>
+                            <ul>
+                                <li><a href="">Hola</a></li>
+                                <li><a href="">Chao</a></li>
+                                <li><a href="">Bueno</a></li>
+                            </ul></li>
+                        <li class="link_marco_legal"><a href="#">Modificaciones</a></li>
+                    </ul>
+                </li>
+                <li class="link_actualidad">
+                    <a href="#">Actualidad</a>
+                    <ul>
+                        <li class="link_actualidad"><a href="#">Noticias</a></li>
+                        <li class="link_actualidad"><a href="#">Actividades</a></li>
+                        <li class="link_actualidad"><a href="#">Columna de Opinion</a>
+                            <ul>
+                                <li><a href="">Hola</a></li>
+                                <li><a href="">Chao</a></li>
+                                <li><a href="">Bueno</a></li>
+                            </ul></li>
+                    </ul>
+                </li>
+                <li class="link_tu_parte">
+                    <a href="#">Tu Parte</a>
+                    <ul>
+                        <li class="link_tu_parte"><a href="#">Adopcion</a></li>
+                        <li class="link_tu_parte"><a href="#">Voluntariado</a></li>
+                        <li class="link_tu_parte"><a href="#">Formar parte</a></li>
+                            <ul>
+                                <li><a href="">Hola</a></li>
+                                <li><a href="">Chao</a></li>
+                                <li><a href="">Bueno</a></li>
+                            </ul></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
