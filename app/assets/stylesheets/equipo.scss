@@ -1,0 +1,67 @@
+section.equipo {
+	h1 {
+		text-align: center;
+		margin: 2em 0;
+	}
+
+	div.boss {
+		div.integrante_del_equipo {
+			img {
+				border-radius: 100%;
+			    width: 21%;
+			    margin: 0 39%;
+			}
+
+			h4 {
+				text-align: center;
+			}
+
+			p {
+				text-align: center;
+				margin: 0 20%;
+			}
+		}	
+	}
+
+	div.managers {
+		@include outer-container;
+		margin-top: 5em;
+		margin-bottom: 5em;
+
+		div.integrante_del_equipo {
+			@include span-columns(4);
+			@include omega();
+			img {
+				border-radius: 100%;
+			    width: 60%;
+			    margin: 0 19%;
+			}
+
+			h4 {
+				text-align: center;
+			}
+
+			p {
+				text-align: center;
+			}
+		}	
+	}
+
+	div.everybody {
+		height: 450px;
+		width: 100%;
+		background-image: url('/assets/foto_equipo.png');
+		background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+	    h2 {
+	    	text-align: center;
+		    color: $amarillo;
+		    font-size: 4em;
+		    padding-top: 13%;
+	    }
+	}
+	
+}

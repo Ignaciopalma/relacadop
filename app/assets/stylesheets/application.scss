@@ -27,7 +27,18 @@ $rosado: rgb(204, 102, 153);
 $celeste: rgb(102, 204, 204);
 $fondo-blanco: #ecf0f1;
 
+// Fonts !!!!
+// -------------
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Droid Sans', sans-serif;
+// font-family: 'Proza Libre', sans-serif;
+// font-family: 'Oxygen', sans-serif;
+
+
 body {
+	font-family: 'Oxygen', sans-serif;
+	line-height: 2.5em;
+	letter-spacing: 0.4px;
 	@include outer-container(100%);
 	background-color: $fondo-blanco;
 
@@ -41,22 +52,52 @@ body {
 				background-size: cover;
 				height: 300px;
 			}
+
+			button.slick-prev:before {
+				content: "<";
+				color: $rosado;
+			}
+
+			button.slick-next:before {
+				content: ">";
+				color: $rosado;	
+			}
 		}
 
 		div.index_noticias {
-			margin: 40px 12%;
+			margin: 80px 12%;
+
+			h2 {
+				text-align: center;
+				margin-bottom: 2em;
+			}
+
+			div.horizontal_line {
+			    border-top: 2px solid $rosado;
+    			margin: 20px 35% 37px 35%;
+			}
+
 			div.noticia {
 				@include outer-container;
-
+				
 				img {
 					@include span-columns(3);
 					width: 180px;
+					display: inline;
 				}
 
-				p {
+				div.texto_noticia {
 					@include span-columns(9);
-					border-left: 1px solid $marron;
-					padding-left: 20px;
+
+					p {
+						margin: 0;
+					}
+
+					p.fecha_noticia {
+						text-align: right;
+						margin: 0;
+						color: $rosado;
+					}
 				}
 			}
 		}
@@ -103,7 +144,7 @@ body {
 
 		div.index_colaboradores {
 			height: 450px;
-			margin: 100px 25%;;
+			margin: 100px 25% 150px 25%;
 
 			h2 {
 				text-align: center;
@@ -120,6 +161,7 @@ body {
 				@include span-columns(12);
 				img {
 					@include span-columns(4);
+
 				}
 			}
 		}	
@@ -128,63 +170,8 @@ body {
 	}
 
 
-
-	section.equipo {
-		h1 {
-			text-align: center;
-		}
-
-		div.boss {
-			div.integrante_del_equipo {
-				img {
-					border-radius: 100%;
-				    width: 21%;
-				    margin: 0 39%;
-				}
-
-				h4 {
-					text-align: center;
-				}
-
-				p {
-					text-align: center;
-				}
-			}	
-		}
-
-		div.managers {
-			@include outer-container;
-
-			div.integrante_del_equipo {
-				@include span-columns(4);
-				@include omega();
-				img {
-					border-radius: 100%;
-				    width: 60%;
-				    margin: 0 19%;
-				}
-
-				h4 {
-					text-align: center;
-				}
-
-				p {
-					text-align: center;
-				}
-			}	
-		}
-
-		div.everybody {
-			height: 600px;
-			width: 100%;
-			background-image: url('/assets/foto_equipo.png');
-			background-attachment: fixed;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		}
-		
-	}
+	
+	@import 'equipo';
 
 
 	@import 'footer';	

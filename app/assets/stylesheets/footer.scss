@@ -8,5 +8,9 @@ footer {
 		@include omega();
 		text-align: center;
 		color: $fondo_blanco;
+
+		h3, p {
+			margin: 0;
+		}
 	}
 }

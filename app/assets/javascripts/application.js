@@ -21,7 +21,8 @@ $(document).ready(function(){
 		autoplay: true,
 		fade: true,
 		speed: 900,
-		autoplaySpeed: 1000
+		autoplaySpeed: 1000,
+    dots: true
 	});
 });
 
