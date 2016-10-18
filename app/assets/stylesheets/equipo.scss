@@ -1,26 +1,7 @@
 section.equipo {
 	h1 {
 		text-align: center;
-		margin: 2em 0;
-	}
-
-	div.boss {
-		div.integrante_del_equipo {
-			img {
-				border-radius: 100%;
-			    width: 21%;
-			    margin: 0 39%;
-			}
-
-			h4 {
-				text-align: center;
-			}
-
-			p {
-				text-align: center;
-				margin: 0 20%;
-			}
-		}	
+		margin: 1.5em 0 1em 0;
 	}
 
 	div.managers {
@@ -43,6 +24,30 @@ section.equipo {
 
 			p {
 				text-align: center;
+			}
+		}	
+	}
+
+	div.horizontal_line {
+	    border-top: 2px solid $rosado;
+		margin: 45px 30% 60px 30%;
+	}
+
+	div.boss {
+		div.integrante_del_equipo {
+			img {
+				border-radius: 100%;
+			    width: 21%;
+			    margin: 0 39%;
+			}
+
+			h4 {
+				text-align: center;
+			}
+
+			p {
+				text-align: center;
+				margin: 0 20%;
 			}
 		}	
 	}

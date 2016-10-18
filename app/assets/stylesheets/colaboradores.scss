@@ -1,0 +1,56 @@
+section.colaboradores {
+	text-align: center;
+
+	h1 {
+		margin: 55px 0;
+	}
+
+	div.row {
+		@include outer-container(100);
+
+		margin: 55px 10%;
+
+		img.small {
+			width: 50%;
+		}
+
+		img.big {
+			width: 33%;
+		}
+		
+		div.logo_colaborador {
+			@include span-columns(6);
+		}
+
+		div.info_colaborador {
+			@include span-columns(6);
+			@include omega();
+		}
+	}
+
+	div.parallax_colaboradores_1 {
+		background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/8.jpg");
+
+	    /* Set a specific height */
+	    height: 350px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	div.parallax_colaboradores_2 {
+		background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/5.jpg");
+
+	    /* Set a specific height */
+	    height: 350px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+}
