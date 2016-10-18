@@ -1,0 +1,32 @@
+section.como_nace {
+	div.texto_como_nace {
+		@include outer-container;
+		text-align: center;	
+
+		h2 {
+			margin-bottom: 36px;
+		}
+
+		div.horizontal_line {
+		    border-top: 2px solid $rosado;
+			margin: 60px 35% 56px 35%;
+		}
+	}
+
+	div.everybody {
+		height: 450px;
+		width: 100%;
+		background-image: url('/assets/foto_equipo.png');
+		background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+	    h2 {
+	    	text-align: center;
+		    color: $amarillo;
+		    font-size: 4em;
+		    padding-top: 13%;
+	    }
+	}
+}

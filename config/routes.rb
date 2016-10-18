@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'pages/colaboradores_2' => 'pages#colaboradores_2'
 
   get 'marco_legal/convenio_haya' => 'marco_legal#convenio_haya'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

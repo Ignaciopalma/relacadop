@@ -1,5 +1,5 @@
 <section class="colaboradores">
-	<h1>Instituciones Asociadas a la RELAC- AD</h1>
+	<h1>Instituciones Asociadas a la RELAC ADOP</h1>
 
 	<div class="row">
 		<div class="logo_colaborador">
@@ -61,18 +61,27 @@
 	</div>
 
 	<div class="row">
-		<div class="logo_colaborador">
-			<img src="https://s3-us-west-2.amazonaws.com/relacadop/logo_maria.png" alt="logo_maria" class="small">
-		</div>
 		<div class="info_colaborador">
 			<h2>Corporación Casa de María y el Niño (Colombia)</h2>
 
 			<p>Corporación Casa de María y el Niño, se funda en el año 1980, iniciándose los trámites ante el Instituto Colombiano de Bienestar Familiar -ICBF- para la consecución de la licencia de funcionamiento que se consiguió en mayo de 1981. A partir de ese momento, se han hecho realidad numerosos procesos de adopción tanto con ciudadanos colombianos como con extranjeros.  La Corporación Casa de María y el Niño es una institución sólida y reconocida por la atención profesional de niños y niñas bajo su protección y por su participación en programas de fortalecimiento a la familia. <%= link_to "www.casademariayelniño.org", "http://casademariayelniño.org " %></p>
 		</div>
+		<div class="logo_colaborador">
+			<img src="https://s3-us-west-2.amazonaws.com/relacadop/colaboradores/logo_maria.png" alt="logo_maria" class="small">
+		</div>
 	</div>
+
+	<%= link_to pages_colaboradores_path do %>
+		<div class="one">1</div>
+	<% end %>
+	<%= link_to pages_colaboradores_2_path do %>
+		<div class="two">2</div>	
+	<% end %>
 
 	<div class="pagination"><%= link_to "Siguiente página", pages_colaboradores_2_path %></div>
 </section>
+
+
 
 
 

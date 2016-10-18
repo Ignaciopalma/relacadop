@@ -1,4 +1,4 @@
-section.colaboradores {
+@mixin colaboradores_style {
 	text-align: center;
 
 	h1 {
@@ -27,6 +27,38 @@ section.colaboradores {
 			@include omega();
 		}
 	}
+}
+
+@mixin circle_number {
+	a {
+		text-decoration: none;
+		div.one {
+		    border: 2px solid black;
+		    border-radius: 46%;
+		    display: inline;
+		    padding: 0.6em 1em;
+		}	
+
+		div.two {
+
+		    border: 2px solid black;
+		    border-radius: 46%;
+		    display: inline;
+		    padding: 1em;
+		    padding: 0.6em 0.9em;
+	    	margin-left: 42px;
+		}
+	}
+}
+
+section.colaboradores {
+	@include colaboradores_style;
+
+	div.row {
+		div.logo_colaborador {
+			margin-top: 70px;
+		}
+	}
 
 	div.parallax_colaboradores_1 {
 		background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/8.jpg");
@@ -41,7 +73,20 @@ section.colaboradores {
 	    background-size: cover;
 	}
 
+	div.pagination {
+		margin: 70px 0;
+	}
+
+	@include circle_number;
+}
+
+section.colaboradores_2 {
+	@include colaboradores_style;
+	margin-top: 80px;
+	margin-bottom: 150px;
+
 	div.parallax_colaboradores_2 {
+		margin: 140px 0;
 		background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/5.jpg");
 
 	    /* Set a specific height */
@@ -53,4 +98,27 @@ section.colaboradores {
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	}
+
+	div.row {
+		div.logo_colaborador {
+			img {
+				margin-top: 160px;
+				width: 55%
+			}
+		}
+
+		div.fana {
+			img {
+				width: 30%;
+			}
+		}
+
+		div.ayudame {
+			img {
+				width: 65%;
+			}
+		}
+	}
+
+	@include circle_number;
 }

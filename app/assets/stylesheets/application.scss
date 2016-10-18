@@ -62,6 +62,15 @@ body {
 				content: ">";
 				color: $rosado;	
 			}
+
+			ul.slick-dots {
+				margin: -18px 0;
+				li {
+					button:before {
+						font-size: 30px;
+					}
+				}				
+			}
 		}
 
 		div.index_noticias {
@@ -173,6 +182,8 @@ body {
 	
 	@import 'equipo';
 	@import 'colaboradores';
-
+	@import 'como_nace';
+	@import 'mision';
+	@import 'convenio_haya';
 	@import 'footer';	
 }

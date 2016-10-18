@@ -39,5 +39,13 @@ $(function() {
 }); 
 
 
+$(document).on('page:load', function () {
+  if(document.URL.includes("colaboradores_2")) {
+    document.getElementsByClassName("two")[0].style.backgroundColor = "#66cccc";
+  }
+});
+
+
+
  
 
