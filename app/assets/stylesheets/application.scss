@@ -39,6 +39,7 @@ $fondo-blanco: #ecf0f1;
 @mixin marco_legal {
 	@include outer-container;
 	text-align: center;	
+	margin-bottom: 100px;
 	
 	div.texto {
 		margin: 0 20%;

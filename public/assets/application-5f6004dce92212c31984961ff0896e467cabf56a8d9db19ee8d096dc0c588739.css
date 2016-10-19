@@ -1,0 +1,1345 @@
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+/* Slider */
+/* line 3, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+}
+/* Arrows */
+/* line 19, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* line 44, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+/* line 53, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 60, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+/* line 66, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 80, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-prev {
+  left: -25px;
+}
+
+/* line 84, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+/* line 89, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-prev:before {
+  content: '←';
+}
+
+/* line 93, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+[dir='rtl'] .slick-prev:before {
+  content: '→';
+}
+
+/* line 98, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-next {
+  right: -25px;
+}
+
+/* line 102, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+/* line 107, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-next:before {
+  content: '→';
+}
+
+/* line 111, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+[dir='rtl'] .slick-next:before {
+  content: '←';
+}
+
+/* Dots */
+/* line 117, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 122, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 137, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 150, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+/* line 168, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 173, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 178, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 200, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick-theme.css */
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+/* Slider */
+/* line 2, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 21, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-list:focus {
+  outline: none;
+}
+
+/* line 35, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 41, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 51, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* line 59, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+/* line 66, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 70, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 75, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* line 83, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+/* line 87, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-slide img {
+  display: block;
+}
+
+/* line 91, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 95, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 99, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 103, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 107, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 115, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/slick.css */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* line 4, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 70, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body {
+  font-family: 'Oxygen', sans-serif;
+  line-height: 2.5em;
+  letter-spacing: 0.4px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ecf0f1;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 2, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header div.logo {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body header div.logo::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 7, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header div.logo img.logotipo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  width: 12em;
+  margin-top: 1em;
+  margin-left: 3em;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body header div.logo img.logotipo:last-child {
+  margin-right: 0;
+}
+/* line 14, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header div.logo img.dibujo_ninos {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-top: 62px;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body header div.logo img.dibujo_ninos:last-child {
+  margin-right: 0;
+}
+/* line 21, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body header nav::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 24, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body header nav div.nav_lista:last-child {
+  margin-right: 0;
+}
+/* line 27, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu, body header nav div.nav_lista ul#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 33, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu {
+  width: 85%;
+  margin: 10px 9%;
+  border: 1px solid #ecf0f1;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  margin-top: 0;
+}
+/* line 42, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu:before,
+body header nav div.nav_lista ul#menu:after {
+  content: "";
+  display: table;
+}
+/* line 48, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu:after {
+  clear: both;
+}
+/* line 52, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu {
+  zoom: 1;
+}
+/* line 56, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu li {
+  float: left;
+  border-right: 1px solid #ecf0f1;
+  position: relative;
+  letter-spacing: 1.5px;
+  width: 200px;
+}
+/* line 64, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_inicio {
+  background: #990000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 70, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_quienes_somos {
+  background: #ff6633;
+}
+/* line 73, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_quienes_somos ul a:hover {
+  background-color: #ff5033;
+}
+/* line 77, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_quienes_somos ul li:first-child > a:after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ff6633;
+}
+/* line 90, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_marco_legal {
+  background: #ffcc66;
+}
+/* line 93, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_marco_legal ul a:hover {
+  background-color: #ffb466;
+}
+/* line 97, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_marco_legal ul li:first-child > a:after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffcc66;
+}
+/* line 108, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_actualidad {
+  background: #cc6699;
+}
+/* line 111, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_actualidad ul a:hover {
+  background-color: #cc5099;
+}
+/* line 115, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_actualidad ul li:first-child > a:after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #cc6699;
+}
+/* line 126, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_tu_parte {
+  background: #66cccc;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* line 131, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_tu_parte ul a:hover {
+  background-color: #66b4cc;
+}
+/* line 135, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_tu_parte ul li:first-child > a:after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #66cccc;
+}
+/* line 148, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista li.link_tu_parte ul li {
+  border-radius: 0;
+}
+/* line 154, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu a {
+  float: left;
+  padding: 12px 30px;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  font: bold 12px Arial, Helvetica;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #000;
+}
+/* line 164, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul {
+  margin: 30px 0 0 0;
+  _margin: 0;
+  /*IE6 only*/
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  z-index: 1;
+  background: #444;
+  background: linear-gradient(#444, #111);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+  width: 100%;
+}
+/* line 181, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+/* line 187, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul ul {
+  top: 0;
+  left: 150px;
+  margin: 0 0 0 20px;
+  _margin: 0;
+  /*IE6 only*/
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.3);
+}
+/* line 195, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul li {
+  float: none;
+  display: block;
+  border: 0;
+  _line-height: 0;
+  /*IE6 only*/
+}
+/* line 202, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul li:last-child {
+  box-shadow: none;
+}
+/* line 206, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul a {
+  padding: 10px;
+  width: 100%;
+  _height: 10px;
+  /*IE6 only*/
+  display: block;
+  white-space: nowrap;
+  float: none;
+  text-transform: none;
+}
+/* line 216, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul li:first-child > a {
+  border-radius: 3px 3px 0 0;
+}
+/* line 220, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul ul li:first-child a:after {
+  left: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-left: 0;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #3b3b3b;
+}
+/* line 230, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul li:first-child a:hover:after {
+  border-bottom-color: #04acec;
+}
+/* line 234, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul ul li:first-child a:hover:after {
+  border-right-color: #0299d3;
+  border-bottom-color: transparent;
+}
+/* line 239, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/header.scss */
+body header nav div.nav_lista ul#menu ul li:last-child > a {
+  border-radius: 0 0 3px 3px;
+}
+/* line 80, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.slider {
+  margin: 0 12%;
+}
+/* line 83, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.slider div.first_slider {
+  background-size: cover;
+  height: 300px;
+}
+/* line 88, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.slider button.slick-prev:before {
+  content: "<";
+  color: #cc6699;
+}
+/* line 93, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.slider button.slick-next:before {
+  content: ">";
+  color: #cc6699;
+}
+/* line 98, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.slider ul.slick-dots {
+  margin: -18px 0;
+}
+/* line 101, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.slider ul.slick-dots li button:before {
+  font-size: 30px;
+}
+/* line 108, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias {
+  margin: 80px 12%;
+}
+/* line 111, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+/* line 116, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias div.horizontal_line {
+  border-top: 2px solid #cc6699;
+  margin: 20px 35% 37px 35%;
+}
+/* line 121, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias div.noticia {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.index_section div.index_noticias div.noticia::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 124, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias div.noticia img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  width: 180px;
+  display: inline;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.index_section div.index_noticias div.noticia img:last-child {
+  margin-right: 0;
+}
+/* line 130, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias div.noticia div.texto_noticia {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.index_section div.index_noticias div.noticia div.texto_noticia:last-child {
+  margin-right: 0;
+}
+/* line 133, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias div.noticia div.texto_noticia p {
+  margin: 0;
+}
+/* line 137, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_noticias div.noticia div.texto_noticia p.fecha_noticia {
+  text-align: right;
+  margin: 0;
+  color: #cc6699;
+}
+/* line 146, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.parallax_image_2 {
+  /* The image used */
+  background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/4.jpg");
+  /* Set a specific height */
+  height: 350px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 160, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_video {
+  margin: 100px 0;
+}
+/* line 162, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_video h2 {
+  text-align: center;
+}
+/* line 167, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_video iframe {
+  margin: 20px 30%;
+}
+/* line 172, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.parallax_image {
+  /* The image used */
+  background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/10.jpg");
+  /* Set a specific height */
+  height: 350px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 186, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_colaboradores {
+  height: 450px;
+  margin: 100px 25% 150px 25%;
+}
+/* line 190, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_colaboradores h2 {
+  text-align: center;
+}
+/* line 194, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_colaboradores div.first_row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.index_section div.index_colaboradores div.first_row:last-child {
+  margin-right: 0;
+}
+/* line 196, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_colaboradores div.first_row img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.index_section div.index_colaboradores div.first_row img:last-child {
+  margin-right: 0;
+}
+/* line 201, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_colaboradores div.second_row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.index_section div.index_colaboradores div.second_row:last-child {
+  margin-right: 0;
+}
+/* line 203, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.index_section div.index_colaboradores div.second_row img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.index_section div.index_colaboradores div.second_row img:last-child {
+  margin-right: 0;
+}
+/* line 2, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo h1 {
+  text-align: center;
+  margin: 1.5em 0 1em 0;
+}
+/* line 7, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.managers {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.equipo div.managers::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 12, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.managers div.integrante_del_equipo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-right: 0;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.equipo div.managers div.integrante_del_equipo:last-child {
+  margin-right: 0;
+}
+/* line 15, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.managers div.integrante_del_equipo img {
+  border-radius: 100%;
+  width: 60%;
+  margin: 0 19%;
+}
+/* line 21, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.managers div.integrante_del_equipo h4 {
+  text-align: center;
+}
+/* line 25, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.managers div.integrante_del_equipo p {
+  text-align: center;
+  padding: 0 35px;
+}
+/* line 32, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.horizontal_line {
+  border-top: 2px solid #cc6699;
+  margin: 45px 30% 60px 30%;
+}
+/* line 39, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.boss div.integrante_del_equipo img {
+  border-radius: 100%;
+  width: 21%;
+  margin: 0 39%;
+}
+/* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.boss div.integrante_del_equipo h4 {
+  text-align: center;
+}
+/* line 49, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.boss div.integrante_del_equipo p {
+  text-align: center;
+  margin: 0 20%;
+}
+/* line 56, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.everybody {
+  height: 450px;
+  width: 100%;
+  background-image: url("/assets/foto_equipo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 65, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/equipo.scss */
+body section.equipo div.everybody h2 {
+  text-align: center;
+  color: #ff6633;
+  font-size: 4em;
+  padding-top: 13%;
+}
+/* line 54, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores {
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 4, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores h1 {
+  margin: 55px 0;
+}
+/* line 8, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.row {
+  max-width: 100;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 55px 10%;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.colaboradores div.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 13, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.row img.small {
+  width: 50%;
+}
+/* line 17, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.row img.big {
+  width: 33%;
+}
+/* line 21, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.row div.logo_colaborador {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.colaboradores div.row div.logo_colaborador:last-child {
+  margin-right: 0;
+}
+/* line 25, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.row div.info_colaborador {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.colaboradores div.row div.info_colaborador:last-child {
+  margin-right: 0;
+}
+/* line 59, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.row div.logo_colaborador {
+  margin-top: 70px;
+}
+/* line 64, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.parallax_colaboradores_1 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/8.jpg");
+  /* Set a specific height */
+  height: 350px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 77, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores div.pagination {
+  margin: 70px 0;
+}
+/* line 33, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores a {
+  text-decoration: none;
+}
+/* line 35, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores a div.one {
+  border-radius: 46%;
+  display: inline;
+  padding: 0.6em 1em;
+}
+/* line 42, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores a div.two {
+  border-radius: 46%;
+  display: inline;
+  padding: 1em;
+  padding: 0.6em 0.9em;
+  margin-left: 42px;
+}
+/* line 84, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+/* line 4, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 h1 {
+  margin: 55px 0;
+}
+/* line 8, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row {
+  max-width: 100;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 55px 10%;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.colaboradores_2 div.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 13, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row img.small {
+  width: 50%;
+}
+/* line 17, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row img.big {
+  width: 33%;
+}
+/* line 21, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row div.logo_colaborador {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.colaboradores_2 div.row div.logo_colaborador:last-child {
+  margin-right: 0;
+}
+/* line 25, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row div.info_colaborador {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body section.colaboradores_2 div.row div.info_colaborador:last-child {
+  margin-right: 0;
+}
+/* line 89, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.parallax_colaboradores_2 {
+  margin: 140px 0;
+  background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/5.jpg");
+  /* Set a specific height */
+  height: 350px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 105, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row div.logo_colaborador img {
+  margin-top: 160px;
+  width: 55%;
+}
+/* line 112, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row div.fana img {
+  width: 30%;
+}
+/* line 118, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 div.row div.ayudame img {
+  width: 65%;
+}
+/* line 33, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 a {
+  text-decoration: none;
+}
+/* line 35, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 a div.one {
+  border-radius: 46%;
+  display: inline;
+  padding: 0.6em 1em;
+}
+/* line 42, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/colaboradores.scss */
+body section.colaboradores_2 a div.two {
+  border-radius: 46%;
+  display: inline;
+  padding: 1em;
+  padding: 0.6em 0.9em;
+  margin-left: 42px;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/como_nace.scss */
+body section.como_nace {
+  margin-bottom: 100px;
+}
+/* line 3, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/como_nace.scss */
+body section.como_nace div.texto_como_nace {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.como_nace div.texto_como_nace::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 7, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/como_nace.scss */
+body section.como_nace div.texto_como_nace h2 {
+  margin-bottom: 36px;
+}
+/* line 11, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/como_nace.scss */
+body section.como_nace div.texto_como_nace div.horizontal_line {
+  border-top: 2px solid #cc6699;
+  margin: 60px 35% 56px 35%;
+}
+/* line 17, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/como_nace.scss */
+body section.como_nace div.everybody {
+  height: 450px;
+  width: 100%;
+  background-image: url("/assets/foto_equipo.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 26, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/como_nace.scss */
+body section.como_nace div.everybody h2 {
+  text-align: center;
+  color: #ffcc66;
+  font-size: 4em;
+  padding-top: 13%;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/mision.scss */
+body section.mision {
+  text-align: center;
+  margin: 0 25%;
+  margin-bottom: 100px;
+}
+/* line 5, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/mision.scss */
+body section.mision div.horizontal_line {
+  border-top: 2px solid #990000;
+  margin: 20px 27% 20px 27%;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/primera_acta.scss */
+body section.primera_acta {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.primera_acta::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/convenio_haya.scss */
+body section.convenio_haya {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.convenio_haya::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.convenio_haya div.texto {
+  margin: 0 20%;
+}
+/* line 49, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.convenio_haya div.horizontal_line {
+  border-top: 2px solid #990000;
+  margin: 60px 35% 60px 35%;
+}
+/* line 55, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.convenio_haya div.link_download a {
+  text-decoration: none;
+}
+/* line 58, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.convenio_haya div.link_download a p {
+  color: #990000;
+}
+/* line 62, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.convenio_haya div.link_download a img {
+  width: 13%;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/codigo_infancia.scss */
+body section.codigo_infancia {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.codigo_infancia::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.codigo_infancia div.texto {
+  margin: 0 20%;
+}
+/* line 49, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.codigo_infancia div.horizontal_line {
+  border-top: 2px solid #990000;
+  margin: 60px 35% 60px 35%;
+}
+/* line 55, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.codigo_infancia div.link_download a {
+  text-decoration: none;
+}
+/* line 58, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.codigo_infancia div.link_download a p {
+  color: #990000;
+}
+/* line 62, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.codigo_infancia div.link_download a img {
+  width: 13%;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/ley_adopcion.scss */
+body section.ley_adopcion {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.ley_adopcion::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.ley_adopcion div.texto {
+  margin: 0 20%;
+}
+/* line 49, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.ley_adopcion div.horizontal_line {
+  border-top: 2px solid #990000;
+  margin: 60px 35% 60px 35%;
+}
+/* line 55, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.ley_adopcion div.link_download a {
+  text-decoration: none;
+}
+/* line 58, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.ley_adopcion div.link_download a p {
+  color: #990000;
+}
+/* line 62, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.ley_adopcion div.link_download a img {
+  width: 13%;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/modificaciones.scss */
+body section.modificaciones {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body section.modificaciones::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 45, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.modificaciones div.texto {
+  margin: 0 20%;
+}
+/* line 49, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.modificaciones div.horizontal_line {
+  border-top: 2px solid #990000;
+  margin: 60px 35% 60px 35%;
+}
+/* line 55, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.modificaciones div.link_download a {
+  text-decoration: none;
+}
+/* line 58, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.modificaciones div.link_download a p {
+  color: #990000;
+}
+/* line 62, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/application.scss */
+body section.modificaciones div.link_download a img {
+  width: 13%;
+}
+/* line 1, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #990000;
+  padding: 5%;
+}
+/* line 20, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/bourbon-5.0.0.beta.6/core/bourbon/library/_clearfix.scss */
+body footer::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 6, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer div.footer_columns {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-right: 0;
+  line-height: 30px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  color: #ecf0f1;
+}
+/* line 89, /Users/ignaciopalma/.rvm/gems/ruby-2.2.2/gems/neat-1.7.4/app/assets/stylesheets/grid/_span-columns.scss */
+body footer div.footer_columns:last-child {
+  margin-right: 0;
+}
+/* line 12, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer div.footer_columns div.horizontal_line_1 {
+  border-top: 4px solid #66cccc;
+  margin: 10px 27% 10px 27%;
+}
+/* line 17, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer div.footer_columns div.horizontal_line_2 {
+  border-top: 4px solid #ff6633;
+  margin: 10px 27% 10px 27%;
+}
+/* line 22, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer div.footer_columns div.horizontal_line_3 {
+  border-top: 4px solid #ffcc66;
+  margin: 10px 27% 10px 27%;
+}
+/* line 27, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer div.footer_columns div.horizontal_line_4 {
+  border-top: 4px solid #cc6699;
+  margin: 10px 27% 10px 27%;
+}
+/* line 35, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer div.footer_columns h3, body footer div.footer_columns p {
+  margin: 0;
+}
+/* line 39, /Users/ignaciopalma/Desktop/my-rails-projects/relacadop/app/assets/stylesheets/footer.scss */
+body footer div.footer_columns p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Abel', sans-serif;
+}

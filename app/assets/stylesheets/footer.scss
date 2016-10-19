@@ -2,7 +2,6 @@ footer {
 	@include outer-container(100%);
 	background-color: $marron;
 	padding: 5%;
-	margin-top: 100px;
 
 	div.footer_columns {
 		@include span-columns(3);
