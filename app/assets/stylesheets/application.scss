@@ -34,6 +34,36 @@ $fondo-blanco: #ecf0f1;
 // font-family: 'Proza Libre', sans-serif;
 // font-family: 'Oxygen', sans-serif;
 
+// MIXINS
+
+@mixin marco_legal {
+	@include outer-container;
+	text-align: center;	
+	
+	div.texto {
+		margin: 0 20%;
+	}
+
+	div.horizontal_line {
+	    border-top: 2px solid $marron;
+		margin: 60px 35% 60px 35%;
+	}
+	
+	div.link_download {
+		a {
+			text-decoration: none;
+
+			p {
+				color: $marron;
+			}
+
+			img {
+				width: 13%;
+			}
+		}	
+	}
+}
+
 
 body {
 	font-family: 'Oxygen', sans-serif;
@@ -184,6 +214,10 @@ body {
 	@import 'colaboradores';
 	@import 'como_nace';
 	@import 'mision';
+	@import 'primera_acta';
 	@import 'convenio_haya';
+	@import 'codigo_infancia';
+	@import 'ley_adopcion';
+	@import 'modificaciones';
 	@import 'footer';	
 }

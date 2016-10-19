@@ -77,8 +77,16 @@
 	<%= link_to pages_colaboradores_2_path do %>
 		<div class="two">2</div>	
 	<% end %>
+	<script>
+		$(document).ready(function() { 
+			if(document.URL.includes("colaboradores_2")) {
+				document.getElementsByClassName("two")[0].style.backgroundColor = "#66cccc";	
+			} else if (document.URL.includes("colaboradores")) {
+				document.getElementsByClassName("one")[0].style.backgroundColor = "#66cccc";
+			}
+		});
 
-	<div class="pagination"><%= link_to "Siguiente página", pages_colaboradores_2_path %></div>
+	</script>
 </section>
 
 

@@ -74,6 +74,17 @@
 		<div class="two">2</div>	
 	<% end %>
 
+	<script>
+		$(document).ready(function() { 
+			if(document.URL.includes("colaboradores_2")) {
+				document.getElementsByClassName("two")[0].style.backgroundColor = "#66cccc";	
+			} else if (document.URL.includes("colaboradores")) {
+				document.getElementsByClassName("one")[0].style.backgroundColor = "#66cccc";
+			}
+		});
+
+	</script>
+
 <!-- 	<div class="row">
 		<div class="logo_colaborador">
 			<img src="" alt="">

@@ -2,15 +2,44 @@ footer {
 	@include outer-container(100%);
 	background-color: $marron;
 	padding: 5%;
+	margin-top: 100px;
 
 	div.footer_columns {
 		@include span-columns(3);
 		@include omega();
+		line-height: 30px;
+    	letter-spacing: 2.5px;
+
+		div.horizontal_line_1 {
+	   		border-top: 4px solid $celeste;
+			margin: 10px 27% 10px 27%;
+		}
+
+		div.horizontal_line_2 {
+	   		border-top: 4px solid $naranjo;
+			margin: 10px 27% 10px 27%;
+		}
+
+		div.horizontal_line_3 {
+	   		border-top: 4px solid $amarillo;
+			margin: 10px 27% 10px 27%;
+		}
+
+		div.horizontal_line_4 {
+	   		border-top: 4px solid $rosado;
+			margin: 10px 27% 10px 27%;
+		}
+
 		text-align: center;
 		color: $fondo_blanco;
 
 		h3, p {
 			margin: 0;
+		}
+
+		p {
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-family: 'Abel', sans-serif;
 		}
 	}
 }
