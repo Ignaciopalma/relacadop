@@ -1,8 +1,9 @@
 <section class="index_section">
 	<div class="slider">
 		<div class="first_slider" style="background-image: url(https://s3-us-west-2.amazonaws.com/relacadop/foto_slider.png)"></div>
-		<div class="first_slider" style="background-image: url(https://s3-us-west-2.amazonaws.com/relacadop/manos.png)"></div>
-		<div class="first_slider" style="background-image: url(http://diferenciafm.cl/wp-content/uploads/2015/04/ni%C3%B1os-felices.jpg)"></div>
+		<div class="first_slider" style="background-image: url(https://s3-us-west-2.amazonaws.com/relacadop/15.png)"></div>
+		<!-- <div class="first_slider" style="background-image: url(http://diferenciafm.cl/wp-content/uploads/2015/04/ni%C3%B1os-felices.jpg)"></div> -->
+		<div class="first_slider" style="background-image: url(https://s3-us-west-2.amazonaws.com/relacadop/6.2.jpg)"></div>
 	</div>
 
 	<div class="index_noticias">
@@ -65,6 +66,18 @@
 			<img src="https://s3-us-west-2.amazonaws.com/relacadop/colaboradores/logo_pleyades.png" alt="logo_pleyades">	
 		</div>
 	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('.slider').slick({
+				autoplay: true,
+				fade: true,
+				speed: 2000,
+				autoplaySpeed: 1500,
+		    	dots: true
+			});
+		});
+	</script>
 </section>
 
 

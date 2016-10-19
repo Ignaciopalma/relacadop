@@ -16,15 +16,7 @@
 //= require_tree .
 
 
-$(document).ready(function(){
-	$('.slider').slick({
-		autoplay: true,
-		fade: true,
-		speed: 900,
-		autoplaySpeed: 1000,
-    dots: true
-	});
-});
+
 
 
 $(function() {
