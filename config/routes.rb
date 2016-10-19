@@ -8,11 +8,13 @@ Rails.application.routes.draw do
   get "pages/como_nace" => 'pages#como_nace'
   get 'pages/colaboradores' => 'pages#colaboradores'
   get 'pages/colaboradores_2' => 'pages#colaboradores_2'
-
+  get 'pages/noticias' => 'pages#noticias'
+  
   get 'marco_legal/convenio_haya' => 'marco_legal#convenio_haya'
   get 'marco_legal/ley_adopcion' => 'marco_legal#ley_adopcion'
   get 'marco_legal/codigo_infancia' => 'marco_legal#codigo_infancia'
   get 'marco_legal/modificaciones' => 'marco_legal#modificaciones'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

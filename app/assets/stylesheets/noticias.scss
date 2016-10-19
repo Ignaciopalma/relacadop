@@ -1,0 +1,13 @@
+section.noticias {
+	@include outer-container(60%);
+	text-align: center;
+	margin-bottom: 90px;
+
+	h2 {
+		margin: 80px 0 40px 0;
+	}
+
+	img.seminario_flyer {
+		width: 90%;
+	}
+}

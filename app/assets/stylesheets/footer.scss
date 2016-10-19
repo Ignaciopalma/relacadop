@@ -4,29 +4,19 @@ footer {
 	padding: 5%;
 
 	div.footer_columns {
-		@include span-columns(3);
+		@include span-columns(6);
 		@include omega();
 		line-height: 30px;
     	letter-spacing: 2.5px;
 
 		div.horizontal_line_1 {
 	   		border-top: 4px solid $celeste;
-			margin: 10px 27% 10px 27%;
-		}
-
-		div.horizontal_line_2 {
-	   		border-top: 4px solid $marron;
-			margin: 10px 27% 10px 27%;
-		}
-
-		div.horizontal_line_3 {
-	   		border-top: 4px solid $amarillo;
-			margin: 10px 27% 10px 27%;
+			margin: 10px 35% 10px 35%;
 		}
 
 		div.horizontal_line_4 {
 	   		border-top: 4px solid $rosado;
-			margin: 10px 27% 10px 27%;
+			margin: 10px 35% 10px 35%;
 		}
 
 		text-align: center;
@@ -34,11 +24,31 @@ footer {
 
 		h3, p {
 			margin: 0;
+			margin-bottom: 6px;
 		}
 
 		p {
 			font-family: 'Open Sans Condensed', sans-serif;
 			font-family: 'Abel', sans-serif;
+		}
+
+		div.contacto_paises {
+			div.info_contacto {
+				@include span-columns(6);
+
+				svg {
+					width: 30px;
+					height: 30px;
+				}
+
+				address {
+					line-height: 22.5px;
+
+					p {
+						margin: 0;
+					}
+				}
+			}
 		}
 	}
 }

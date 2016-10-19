@@ -35,11 +35,16 @@ section.equipo {
 	}
 
 	div.boss {
+		@include outer-container;
+		margin-top: 100px;
+		margin-bottom: 100px;
 		div.integrante_del_equipo {
+			@include span-columns(6);
+			@include omega();
 			img {
 				border-radius: 100%;
-			    width: 21%;
-			    margin: 0 39%;
+			    width: 38%;
+			    margin: 0 30%;
 			}
 
 			h4 {

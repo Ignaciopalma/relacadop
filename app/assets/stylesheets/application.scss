@@ -45,6 +45,11 @@ $fondo-blanco: #ecf0f1;
 	
 	div.texto {
 		margin: 0 20%;
+
+		h2 {
+			margin-top: 60px;
+			margin-bottom: 60px;
+		}
 	}
 
 	div.horizontal_line {
@@ -166,7 +171,9 @@ body {
 			}
 
 			iframe {
-				margin: 20px 30%;
+			    margin: 20px 21%;
+			    width: 800px;
+			    height: 388px;
 			}
 		}
 
@@ -221,6 +228,7 @@ body {
 	@import 'convenio_haya';
 	@import 'codigo_infancia';
 	@import 'ley_adopcion';
+	@import 'noticias';
 	@import 'modificaciones';
 	@import 'footer';	
 }
