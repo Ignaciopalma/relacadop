@@ -44,8 +44,17 @@ header {
 			form {
 				margin: 0 10%;
 
-				input, 
+				input {
+					height: 45px;
+					border: none;
+					width: 100%;
+				    border-radius: 10px;
+				    margin-bottom: 10px;
+				} 
+
 				textarea {
+					height: 100px;
+					border: none;
 					width: 100%;
 				    border-radius: 10px;
 				    margin-bottom: 10px;
