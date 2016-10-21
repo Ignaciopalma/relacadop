@@ -34,6 +34,7 @@ header {
 	/* Modal Content/Box */
 	div.modal {
 		.modal-content {
+			border-radius: 10px;
 			text-align: center;
 		    background-color: $celeste;
 		    margin: 15% auto; /* 15% from the top and centered */
@@ -41,6 +42,11 @@ header {
 		    border: 1px solid #888;
 		    width: 55%; /* Could be more or less, depending on screen size */
 		    
+		    p {
+				color: $fondo-blanco;
+				font-size: 1.3em;
+		    }
+
 			form {
 				margin: 0 10%;
 
@@ -58,6 +64,10 @@ header {
 					width: 100%;
 				    border-radius: 10px;
 				    margin-bottom: 10px;
+				}
+
+				input[type="submit"] {
+					color: $fondo-blanco;
 				}
 			}
 		}	
