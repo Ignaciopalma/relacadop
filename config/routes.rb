@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'marco_legal/ley_adopcion' => 'marco_legal#ley_adopcion'
   get 'marco_legal/codigo_infancia' => 'marco_legal#codigo_infancia'
   get 'marco_legal/modificaciones' => 'marco_legal#modificaciones'
+  get 'marco_legal/derechos_nino' => 'marco_legal#derechos_nino'
   resources :messages
 
 

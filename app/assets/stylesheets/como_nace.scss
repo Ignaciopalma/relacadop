@@ -23,14 +23,18 @@ section.como_nace {
 			text-align: center;
 			margin-bottom: 60px;
 		}
-
-		img {
+		
+		div.fundador {
 			@include span-columns(3);
-			border-radius: 100%;
-		}
+			text-align: center;
+			img {
+				border-radius: 100%;
+				width: 80%;
+			}	
 
-		img#gonzalo {
-			height: 276px;
+			img#gonzalo {
+				height: 226px;
+			}
 		}
 	}
 }

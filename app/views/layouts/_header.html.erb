@@ -24,6 +24,7 @@
                         <li class="link_marco_legal"><%= link_to "Convenio de la Haya", marco_legal_convenio_haya_path %></li>
                         <li class="link_marco_legal"><%= link_to "Codigo de la infancia", marco_legal_codigo_infancia_path %></li>
                         <li class="link_marco_legal"><%= link_to "Modificaciones", marco_legal_modificaciones_path %></li>
+                        <li class="link_marco_legal"><%= link_to "Derechos del niño", marco_legal_derechos_nino_path %></li>
                     </ul>
                 </li>
                 <li class="link_actualidad">
@@ -57,15 +58,19 @@
                 <%= f.text_area :message, placeholder: "MENSAJE" %> <br>
                 <%= f.submit "Enviar" %>
             <% end  %>
+            <%#= mail_to "mraquelmoralesibanez@gmail.com" do %>
+              <!-- <strong>O escribenos un mail a:</strong> 
+              <span>raquelmoralesibanez@gmail.com</span>
+              <span>ddelgatto@gmail.com</span>
+              <span>gutierrez@cran.org.cospan</span> -->
+            <%# end %>
         </div>
     </div>
 
     <script>
-
-        var nav = document.getElementsByClassName("nav_lista")[0];
-
         window.addEventListener("scroll", function() {
-          if(window.scrollY == 200) {
+          var nav = document.getElementsByClassName("nav_lista")[0];
+          if(window.scrollY > 200) {
             nav.className += " " + "sticky";
             nav.style.top = 0;
           } else if (window.scrollY < 200) {

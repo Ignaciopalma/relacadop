@@ -12,14 +12,11 @@ section.equipo {
 		div.integrante_del_equipo {
 			@include span-columns(4);
 			@include omega();
+			text-align: center;
 			img {
 				border-radius: 100%;
 			    width: 60%;
 			    margin: 0 19%;
-			}
-
-			h4 {
-				text-align: center;
 			}
 
 			p {
@@ -41,14 +38,16 @@ section.equipo {
 		div.integrante_del_equipo {
 			@include span-columns(6);
 			@include omega();
+			text-align: center;
+
 			img {
 				border-radius: 100%;
 			    width: 38%;
 			    margin: 0 30%;
 			}
 
-			h4 {
-				text-align: center;
+			img#gonzalo_pic {
+				height: 224px;
 			}
 
 			p {
