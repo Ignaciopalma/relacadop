@@ -59,6 +59,14 @@ section.colaboradores {
 		div.logo_colaborador {
 			margin-top: 70px;
 		}
+
+		div.info_colaborador {
+			p {
+				a {
+					color: $celeste;
+				}
+			}
+		}
 	}
 
 	div.parallax_colaboradores_1 {
@@ -105,6 +113,20 @@ section.colaboradores_2 {
 			img {
 				margin-top: 160px;
 				width: 55%
+			}
+		}
+
+		div.info_colaborador {
+			p {
+				a {
+					color: $celeste;
+				}
+			}
+		}
+
+		div#madre_nino {
+			img {
+				margin-top: 100px;	
 			}
 		}
 

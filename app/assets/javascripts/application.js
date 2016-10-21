@@ -36,6 +36,7 @@ $(document).on('page:load', function () {
     document.getElementsByClassName("two")[0].style.backgroundColor = "#66cccc";
   }
 });
+ 
 
 
 

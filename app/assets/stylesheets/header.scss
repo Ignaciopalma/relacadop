@@ -17,9 +17,65 @@ header {
 			margin-top: 62px;
 		}
 	}
+
+	.modal {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Sit on top */
+	    left: 0;
+	    top: 0;
+	    width: 100%; /* Full width */
+	    height: 100%; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content/Box */
+	div.modal {
+		.modal-content {
+			text-align: center;
+		    background-color: $celeste;
+		    margin: 15% auto; /* 15% from the top and centered */
+		    padding: 20px;
+		    border: 1px solid #888;
+		    width: 55%; /* Could be more or less, depending on screen size */
+		    
+			form {
+				margin: 0 10%;
+
+				input, 
+				textarea {
+					width: 100%;
+				    border-radius: 10px;
+				    margin-bottom: 10px;
+				}
+			}
+		}	
+	}
+	
+
+	/* The Close Button */
+	.close {
+	    color: $marron;
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	    color: black;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
 	
 	nav {
 		@include outer-container;
+		
+		div.sticky {
+			position: fixed;
+		}
 
 		div.nav_lista {
 			@include span-columns(12);
@@ -50,7 +106,7 @@ header {
 			}
 
 			ul#menu {
-			    zoom:1;
+			    zoom:1;			
 			}
 
 			ul#menu li {
@@ -58,7 +114,7 @@ header {
 			    border-right: 1px solid $fondo-blanco;
 			    position: relative;
 			    letter-spacing: 1.5px;
-			    width: 200px;
+			    width: 200px;			    
 			}
 
 			li.link_inicio {
