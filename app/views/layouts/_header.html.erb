@@ -39,13 +39,18 @@
                     <a href="#">Tu Parte</a>
                     <ul>
                         <li class="link_tu_parte"><a href="#">Testimonios</a></li>
-                        <li class="link_tu_parte" id="modal_button">Escribenos</li>
+                        <li class="link_tu_parte" id="modal_button"><a>Escribenos</a></li>
                         <li class="link_tu_parte"><a href="#">Formar parte</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <div id="modal_congreso" class="congreso_modal">
+      <span class="banner_close">x</span>
+      <img src="https://s3-us-west-2.amazonaws.com/relacadop/Agenda-Contacto.png" alt="banner_congreso">  
+    </div>
 
     <div id="myModal" class="modal">
         <!-- Modal content -->
@@ -81,12 +86,13 @@
 
         // Get the modal
           var modal = document.getElementById('myModal');
-
+          var modal_banner = document.getElementById("modal_congreso");
           // Get the button that opens the modal
           var btn = document.getElementById("modal_button");
 
           // Get the <span> element that closes the modal
           var span = document.getElementsByClassName("close")[0];
+          var bannerSpan = document.getElementsByClassName("banner_close")[0];
 
           // When the user clicks on the button, open the modal 
           btn.onclick = function() {
@@ -98,11 +104,25 @@
               modal.style.display = "none";
           }
 
+          bannerSpan.onclick = function() {
+              modal_banner.style.display = "none";
+          }
+
           // When the user clicks anywhere outside of the modal, close it
           window.onclick = function(event) {
               if (event.target == modal) {
                   modal.style.display = "none";
               }
           }
+
+          window.onclick = function(event) {
+              if (event.target == modal_banner) {
+                  modal_banner.style.display = "none";
+              }
+          }
+
+        window.onload = function() {
+            modal_banner.style.display = "block";
+        }
     </script>
 </header>
