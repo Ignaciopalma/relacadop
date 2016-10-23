@@ -3,11 +3,57 @@ section.noticias {
 	text-align: center;
 	margin-bottom: 90px;
 
-	h2 {
-		margin: 80px 0 40px 0;
+	div.noticia_congreso_colombia {
+		@include outer-container(100%);
+
+		h1 {
+			@include span-columns(12);
+			margin: 40px 0;
+		}
+
+		img {
+			@include span-columns(6);
+		}		
+
+		p {
+			@include span-columns(6);
+		}
 	}
 
-	img.seminario_flyer {
-		width: 90%;
+	div.horizontal_line {
+	    border-top: 2px solid $marron;
+		margin: 90px 35% 60px 35%;
+	}
+
+	div.noticia_seminario {
+		h2 {
+			
+		}
+
+		img.seminario_flyer {
+			width: 90%;
+		}
+
+		div.more_text {
+			@include outer-container(100%);
+			display: none;
+
+			ul {
+				@include span-columns(6);
+				text-align: justify;
+			}
+
+			div.seminario_pics {
+				@include span-columns(6);
+
+				img {
+					width: 77%;
+				}
+			}
+		}	
+	}
+
+	div.noticia_haya {
+
 	}
 }
