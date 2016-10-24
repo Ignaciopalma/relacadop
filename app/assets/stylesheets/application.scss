@@ -164,7 +164,7 @@ body {
 		}
 		
 		div.index_video {
-			margin: 100px 0;
+			margin: 100px 0 30px 0;
 			h2 {
 				text-align: center;
 
@@ -174,6 +174,14 @@ body {
 			    margin: 20px 21%;
 			    width: 800px;
 			    height: 388px;
+			}
+
+			div.cuatro_ninos {
+				text-align: center;
+				
+				img {
+					width: 20%;
+				}
 			}
 		}
 
@@ -192,30 +200,26 @@ body {
 		}	
 
 		div.index_colaboradores {
-			height: 450px;
-			margin: 100px 25% 150px 25%;
+			height: 800px;
+			//margin: 100px 10% 150px 10%;
 
 			h2 {
 				text-align: center;
+				margin: 60px 0;
 			}
 
-			div.first_row {
-				@include span-columns(12);
-				img {
-					@include span-columns(4);
-				}
-			}
+			div.colaboradores_row {
+				@include outer-container;
+				div.image {
+					@include span-columns(3);
+					text-align: center;
 
-			div.second_row {
-				@include span-columns(12);
-				img {
-					@include span-columns(4);
-
+					img {
+						width: 63%;
+					}
 				}
 			}
 		}	
-
-
 	}
 
 

@@ -25,13 +25,20 @@ section.noticias {
 		margin: 90px 35% 60px 35%;
 	}
 
-	div.noticia_seminario {
+	div.noticia_haya {
 		h2 {
 			
 		}
 
 		img.seminario_flyer {
 			width: 90%;
+		}
+
+		button {
+			background-color: $celeste;
+			border: 0;
+		    color: $fondo-blanco;
+		    border-radius: 10px;
 		}
 
 		div.more_text {
@@ -43,17 +50,86 @@ section.noticias {
 				text-align: justify;
 			}
 
-			div.seminario_pics {
+			div.haya_pics {
 				@include span-columns(6);
 
 				img {
 					width: 77%;
 				}
 			}
+		}
+
+	}
+
+	div.noticia_seminario {
+		button {
+			background-color: $celeste;
+			border: 0;
+		    color: $fondo-blanco;
+		    border-radius: 10px;
+		}
+
+		div.more_text {
+			@include outer-container(100%);
+			display: none;
+
+			div.seminario_first_row {
+				div.image {
+					@include span-columns(6);
+					padding-top: 30px;
+
+					img {
+						width: 80%;
+					}
+
+					p {
+						margin: 0 25%;
+					}
+				}
+
+				p {
+					@include span-columns(6);
+				}
+			}
+
+			div.seminario_second_row {
+				@include outer-container;
+				p {
+					@include span-columns(6);
+				}
+
+				div.image {
+					@include span-columns(6);
+					padding-top: 50px;
+
+					img {
+						width: 80%;
+					}
+					p {
+						margin: 0 25%;
+					}
+				}
+			}
+
+			div.seminario_pics {
+				img {
+					@include span-columns(6);
+				}
+			}
 		}	
 	}
 
-	div.noticia_haya {
+	div.noticia_primera_asamblea {
+		button {
+			background-color: $celeste;
+			border: 0;
+		    color: $fondo-blanco;
+		    border-radius: 10px;
+		}
 
+		div.more_text {
+			@include outer-container(100%);
+			display: none;
+		}
 	}
 }

@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root "pages#index"
 
   get 'pages/equipo' => 'pages#equipo'
-  get "pages/primera_acta" => 'pages#primera_acta'
   get "pages/mision" => 'pages#mision'
   get "pages/como_nace" => 'pages#como_nace'
   get 'pages/colaboradores' => 'pages#colaboradores'

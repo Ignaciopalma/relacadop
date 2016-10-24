@@ -3,6 +3,16 @@ footer {
 	background-color: $naranjo;
 	padding: 5%;
 
+	div.logo_horizontal {
+		@include outer-container;
+		text-align: center;
+
+		img {
+			width: 24%;
+			margin-bottom: 26px;
+		}
+	}
+
 	div.footer_columns {
 		@include span-columns(6);
 		@include omega();
