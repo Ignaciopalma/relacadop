@@ -72,6 +72,13 @@ $fondo-blanco: #ecf0f1;
 	}
 }
 
+@mixin relac_button {
+	background-color: $celeste;
+	border: 0;
+    color: $fondo-blanco;
+    border-radius: 10px;
+}
+
 
 body {
 	font-family: 'Quicksand', sans-serif;
@@ -111,6 +118,25 @@ body {
 			}
 		}
 
+		div.video_modal {
+			display: none;
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    left: 0;
+		    top: 0;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+
+		    iframe {
+		        margin: 10% 16%;
+			    width: 70%;
+			    height: 61%;
+		    }
+		}
+
 		div.index_noticias {
 			margin: 80px 12%;
 
@@ -144,6 +170,10 @@ body {
 						text-align: right;
 						margin: 0;
 						color: $rosado;
+					}
+
+					button {
+						@include relac_button;
 					}
 				}
 			}
@@ -235,5 +265,6 @@ body {
 	@import 'noticias';
 	@import 'modificaciones';
 	@import 'derechos_nino';
+	@import 'testimonios';
 	@import 'footer';	
 }

@@ -10,12 +10,12 @@ section.equipo {
 		margin-bottom: 5em;
 
 		div.integrante_del_equipo {
-			@include span-columns(4);
+			@include span-columns(6);
 			@include omega();
 			text-align: center;
 			img {
 				border-radius: 100%;
-			    width: 60%;
+			    width: 42%;
 			    margin: 0 19%;
 			}
 
@@ -36,13 +36,13 @@ section.equipo {
 		margin-top: 100px;
 		margin-bottom: 100px;
 		div.integrante_del_equipo {
-			@include span-columns(6);
+			@include span-columns(4);
 			@include omega();
 			text-align: center;
 
 			img {
 				border-radius: 100%;
-			    width: 38%;
+			    width: 59%;
 			    margin: 0 30%;
 			}
 

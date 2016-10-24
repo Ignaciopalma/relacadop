@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'pages/colaboradores' => 'pages#colaboradores'
   get 'pages/colaboradores_2' => 'pages#colaboradores_2'
   get 'pages/noticias' => 'pages#noticias'
+  get 'pages/testimonios' => 'pages#testimonios'
   
   get 'marco_legal/convenio_haya' => 'marco_legal#convenio_haya'
   get 'marco_legal/ley_adopcion' => 'marco_legal#ley_adopcion'

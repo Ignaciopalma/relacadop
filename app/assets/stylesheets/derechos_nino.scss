@@ -1,3 +1,8 @@
 section.derechos_nino {
 	text-align: center;
+	margin: 0 20%;
+
+	ul li:before {
+		color: $celeste;
+	}
 }

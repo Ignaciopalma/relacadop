@@ -6,13 +6,18 @@
 		<div class="first_slider" style="background-image: url(https://s3-us-west-2.amazonaws.com/relacadop/6.2.jpg)"></div>
 	</div>
 
+	<div class="video_modal">
+
+		<iframe width="560" height="315" class="w3-animate-zoom" src="https://www.youtube.com/embed/SI3r3TRZpIE" frameborder="0" allowfullscreen></iframe>
+	</div>
+
 	<div class="index_noticias">
 		<h2>Actualidad</h2>
 		<div class="horizontal_line"></div>
 		<div class="noticia">
 			<img src="https://s3-us-west-2.amazonaws.com/relacadop/Agenda-Contacto.png" alt="noticia_congreso">
 			<div class="texto_noticia">
-				<p>El equipo de Relac Adop estara participando en el primer congreso latinoamericano de adopciones, que se realizará este 27 y 28 de Octubre en Bogotá, Colombia. Dentro de los objetivos, esta atraer jueces, defensores de familia, empresa privada y los medios para elevar el debate de los derechos de los niños vulnerados y de adopción en Colombia. Tambien dejar un aporte académico y una discusión abierta para el mejoramiento del proceso de adopción en Colombia y América Latina.</p>
+				<p>El equipo de Relac Adop realiza su primer congreso latinoamericano de adopciones, que se realizará este 27 y 28 de Octubre en Bogotá, Colombia. Dentro de los objetivos, esta atraer jueces, defensores de familia, empresa privada y los medios para elevar el debate de los derechos de los niños vulnerados y de adopción en Colombia. <button class="video_button">Ver Video</button> Tambien dejar un aporte académico y una discusión abierta para el mejoramiento del proceso de adopción en Colombia y América Latina.</p>
 				<p class="fecha_noticia">22 de Octubre de 2016</p>
 			</div>
 		</div>
@@ -21,7 +26,7 @@
 			<img src="https://s3-us-west-2.amazonaws.com/relacadop/noticia_haya/haya_delia.png" alt="">
 			<div class="texto_noticia">
 				<p>RELAC-ADOP, participaron en calidad de Observadores -del 8 al 12 de junio de 2015- en la Cuarta Comisión especial sobre la aplicación práctica del mencionado Convenio, la que se llevó a cabo en la Conferencia de La Haya de Derecho Internacional Privado, Holanda.</p>
-				<p class="fecha_noticia">19 de Septiembre de 2016</p>
+				<p class="fecha_noticia">Junio de 2016</p>
 			</div>
 		</div>
 
@@ -30,7 +35,7 @@
 			<img src="https://s3-us-west-2.amazonaws.com/relacadop/noticia_seminario/foto_seminario_3.png" alt="">
 			<div class="texto_noticia">
 				<p>Bajo el Patrocinio de Unicef, Fundación Telefónica, Adoptions Centrum, International Social Services, Archi, entre otros, se realizó en el mes de diciembre recién pasado, el V Seminario Internacional de Adopción, “La Adopción, una opción permanente, a la luz de la ley de garantía de los derechos de los niños, niña y adolescentes”.</p>
-				<p class="fecha_noticia">Junio de 2015</p>
+				<p class="fecha_noticia">Diciembre de 2015</p>
 			</div>
 		</div>
 
@@ -145,6 +150,21 @@
 		    	dots: true
 			});
 		});
+
+		var video = document.getElementsByClassName("video_modal")[0];
+		var videoButton = document.getElementsByClassName("video_button")[0];
+
+		videoButton.onclick = function() {
+			video.style.display = "block";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == video) {
+				video.style.display = "none";
+			}
+		}
+
 	</script>
 </section>
 
