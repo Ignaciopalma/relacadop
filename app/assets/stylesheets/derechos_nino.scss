@@ -5,4 +5,13 @@ section.derechos_nino {
 	ul li:before {
 		color: $celeste;
 	}
+
+	button {
+		@include relac_button;
+		margin: 50px 0;
+	}
+
+	div.seguir_leyendo {
+		display: none;
+	}
 }

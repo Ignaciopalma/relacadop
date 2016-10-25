@@ -1,0 +1,42 @@
+<section class="rakelita">
+	<h1>Bandeja de Entrada</h1>
+	<% @messages.each do |m| %>
+		<div class="message">
+			<p>Nombre: <%= m.name %></p>
+			<p>Email: <%= m.email %></p>
+			<p>Mensaje: <%= m.message %></p>
+			<br>
+			<p>Fecha: <%= m.created_at.strftime("%d")%> de 
+				<% case %>
+					<% when m.created_at.strftime("%B") == "January" %>
+						Enero
+					<% when m.created_at.strftime("%B") == "February" %>
+						Febrero
+					<% when m.created_at.strftime("%B") == "March" %>
+						Marzo
+					<% when m.created_at.strftime("%B") == "April" %>
+						Abril
+					<% when m.created_at.strftime("%B") == "May" %>
+						Mayo
+					<% when m.created_at.strftime("%B") == "June" %>
+						Junio
+					<% when m.created_at.strftime("%B") == "July" %>
+						Julio
+					<% when m.created_at.strftime("%B") == "August" %>
+						Agosto
+					<% when m.created_at.strftime("%B") == "September" %>
+						Septiembre
+					<% when m.created_at.strftime("%B") == "October" %>
+						Octubre
+					<% when m.created_at.strftime("%B") == "November" %>
+						Noviembre
+					<% when m.created_at.strftime("%B") == "December" %>
+						Diciembre
+				<% end %>
+
+				de <%= m.created_at.year %>.
+			</p>
+			
+		</div>
+	<% end %>
+</section>

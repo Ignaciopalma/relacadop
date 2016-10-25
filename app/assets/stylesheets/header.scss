@@ -74,7 +74,7 @@ header {
 		    width: 55%; /* Could be more or less, depending on screen size */
 		    
 		    p {
-				color: $fondo-blanco;
+				color: $naranjo;
 				font-size: 1.3em;
 		    }
 
@@ -87,6 +87,7 @@ header {
 					width: 100%;
 				    border-radius: 10px;
 				    margin-bottom: 10px;
+				    color: $naranjo;
 				} 
 
 				textarea {
@@ -95,10 +96,11 @@ header {
 					width: 100%;
 				    border-radius: 10px;
 				    margin-bottom: 10px;
+				    color: $naranjo;
 				}
 
 				input[type="submit"] {
-					color: $fondo-blanco;
+					color: $naranjo;
 				}
 			}
 		}	

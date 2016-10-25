@@ -176,6 +176,14 @@ body {
 					}
 				}
 			}
+
+			div#ultima_noticia {
+				div.texto_noticia {
+					p {
+						font-weight: bold;
+					}
+				}
+			}
 		}
 
 		div.parallax_image_2 {
@@ -265,5 +273,6 @@ body {
 	@import 'modificaciones';
 	@import 'derechos_nino';
 	@import 'testimonios';
+	@import 'rakelita';
 	@import 'footer';	
 }
