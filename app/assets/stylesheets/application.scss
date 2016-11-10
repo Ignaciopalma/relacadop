@@ -261,6 +261,18 @@ body {
 					}
 				}
 			}
+
+			div.last_colaboradores_row {
+				@include outer-container;
+				div.image {
+					@include span-columns(2.4);
+					text-align: center;
+
+					img {
+						width: 63%;
+					}
+				}
+			}
 		}	
 	}
 

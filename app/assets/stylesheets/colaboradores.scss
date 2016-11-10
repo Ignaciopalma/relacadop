@@ -20,11 +20,19 @@
 		
 		div.logo_colaborador {
 			@include span-columns(6);
+
+			img#acogiendo_peru_logo {
+				margin-top: 87px;
+			    width: 38%;
+			    margin-left: 75px;
+			}
 		}
 
 		div.info_colaborador {
 			@include span-columns(6);
 			@include omega();
+
+			text-align: justify;
 		}
 	}
 }
