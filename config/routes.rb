@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :reports
+  devise_for :admins
   root "pages#index"
 
   get 'pages/equipo' => 'pages#equipo'

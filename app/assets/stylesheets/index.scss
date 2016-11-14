@@ -1,0 +1,187 @@
+section.index_section {
+	div.video_modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.8);
+
+		iframe {
+			margin: 10% 16%;
+			width: 70%;
+			height: 61%; 
+		}
+	}
+
+	div.slider {
+		margin:  0 12%;
+
+		div.first_slider {
+			background-size: cover;
+			height: 300px;
+		}
+
+		button.slick-prev:before {
+			content: "<";
+			color: $rosado;
+		}
+
+		button.slick-next:before {
+			content: ">";
+			color: $rosado;	
+		}
+
+		ul.slick-dots {
+			margin: -18px 0;
+			li {
+				button:before {
+					font-size: 30px;
+				}
+			}				
+		}
+	}
+
+	div.index_noticias {
+		margin: 80px 12%;
+
+		h1 {
+			text-align: center;
+			display: none;
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 2em;
+		}
+
+		div.horizontal_line {
+		    border-top: 2px solid $rosado;
+			margin: 20px 35% 37px 35%;
+		}
+
+		div.noticia {
+			@include outer-container;
+			
+			img {
+				@include span-columns(3);
+				width: 180px;
+				display: inline;
+			}
+
+			div.texto_noticia {
+				@include span-columns(9);
+
+				p {
+					margin: 0;
+				}
+
+				p.fecha_noticia {
+					text-align: right;
+					margin: 0;
+					color: $rosado;
+				}
+
+				button {
+					@include relac_button;
+				}
+			}
+		}
+
+		div#ultima_noticia {
+			div.texto_noticia {
+				p {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	div.parallax_image_2 {
+		/* The image used */
+	    background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/3.1.png");
+
+	    /* Set a specific height */
+	    height: 350px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	
+	div.index_video {
+		margin: 100px 0 30px 0;
+		h2 {
+			text-align: center;
+
+		}
+
+		iframe {
+		    margin: 20px 21%;
+		    width: 800px;
+		    height: 388px;
+		}
+
+		div.cuatro_ninos {
+			text-align: center;
+			
+			img {
+				width: 20%;
+			}
+		}
+	}
+
+	div.parallax_image {
+			    /* The image used */
+	    background-image: url("https://s3-us-west-2.amazonaws.com/relacadop/10.jpg");
+
+	    /* Set a specific height */
+	    height: 350px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}	
+
+	div.index_colaboradores {
+		height: 800px;
+		//margin: 100px 10% 150px 10%;
+
+		h2 {
+			text-align: center;
+			margin: 60px 0;
+		}
+
+		div.colaboradores_row {
+			@include outer-container;
+			div.image {
+				@include span-columns(3);
+				text-align: center;
+
+				img {
+					width: 63%;
+				}
+			}
+		}
+
+		div.last_colaboradores_row {
+			@include outer-container;
+			div.image {
+				@include span-columns(2.4);
+				text-align: center;
+
+				img {
+					width: 63%;
+				}
+			}
+		}
+	}	
+}

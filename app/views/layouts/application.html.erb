@@ -17,6 +17,11 @@
 </head>
 
 <body>
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <% if admin_signed_in? %>
+    	<button><%= link_to "Salir", destroy_admin_session_path, :method => :delete %></button>
+    <% end %>
 	<%= render 'layouts/header' %>
 
 	<%= yield %>

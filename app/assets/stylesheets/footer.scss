@@ -18,6 +18,7 @@ footer {
 		@include omega();
 		line-height: 30px;
     	letter-spacing: 2.5px;
+    	position: relative;
 
 		div.horizontal_line_1 {
 	   		border-top: 4px solid $celeste;
