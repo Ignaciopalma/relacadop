@@ -63,7 +63,7 @@ section.index_section {
 		    border-top: 2px solid $rosado;
 			margin: 20px 35% 37px 35%;
 		}
-
+		
 		div.noticia {
 			@include outer-container;
 			
@@ -90,6 +90,10 @@ section.index_section {
 					@include relac_button;
 				}
 			}
+		}
+
+		div.noticia:hover {
+			background-color: $celeste;
 		}
 
 		div#ultima_noticia {

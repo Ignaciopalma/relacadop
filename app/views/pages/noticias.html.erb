@@ -1,4 +1,19 @@
 <section class="noticias">
+	<div class="report-template">
+		<% @reports.each do |report| %>
+		<h2><%= report.title %></h2>
+		<div class="main-image">
+			<%= image_tag report.image_url() %>	
+		</div>
+		<p class="report-headliner"><%= report.headliner %></p>
+		
+		<button class="read_more">Seguir Leyendo...</button>
+		<div class="more_text w3-animate-opacity">
+			<p class="report-content"><%= report.content %></p>
+		</div>
+		<div class="horizontal_line"></div>
+		<% end %>
+	</div>
 	<div class="noticia_congreso_colombia">
 		<h2>Primer Congreso Latinoamericano de Adopciones</h2>
 		<img src="https://s3-us-west-2.amazonaws.com/relacadop/Agenda-Contacto.png">

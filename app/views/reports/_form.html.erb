@@ -12,21 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :titulo_de_la_noticia %><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :headliner %><br>
-    <%= f.text_field :headliner %>
+    <%= f.label :extracto %><br>
+    <%= f.text_area :headliner, rows: 4 %>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
+    <%= f.label :contenido %><br>
+    <%= f.text_area :content, rows: 10 %>
   </div>
-  <div class="field">
+  <div class="field" id="main-image-field">
+    <p>Imagen Principal</p>
     <%= f.file_field :image %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Publicar" %>
   </div>
 <% end %>

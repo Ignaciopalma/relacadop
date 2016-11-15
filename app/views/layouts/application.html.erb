@@ -20,7 +20,10 @@
 	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <% if admin_signed_in? %>
-    	<button><%= link_to "Salir", destroy_admin_session_path, :method => :delete %></button>
+    	<button><%= link_to "Nueva Noticia", new_report_path %></button>
+    	<button><%= link_to "Administrar Noticias", reports_path %></button>
+    	<button><%= link_to "Ver Mensajes", pages_rakelita_path %></button>
+    	<button><%= link_to "Cerrar Sesión", destroy_admin_session_path, :method => :delete %></button>
     <% end %>
 	<%= render 'layouts/header' %>
 

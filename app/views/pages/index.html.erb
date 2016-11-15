@@ -14,7 +14,20 @@
 		<h1>Relac Adop</h1>
 		<h2>Actualidad</h2>
 		<div class="horizontal_line"></div>
-		<div class="noticia" id="ultima_noticia">
+		<% @lastFourReports.each do |report| %>
+		<%= link_to report_path(report) do %>
+		<div class="noticia">
+			<%= image_tag report.image_url() %>
+			<div class="texto_noticia">
+				<p><%= report.headliner %></p>
+				<p class="fecha_noticia"><%= report.created_at %></p>
+			</div>
+			
+		</div>
+		<div class="horizontal_line"></div>
+		<% end %>
+		<% end %>
+	<!-- 	<div class="noticia" id="ultima_noticia">
 			<img src="https://s3-us-west-2.amazonaws.com/relacadop/Agenda-Contacto.png" alt="noticia_congreso">
 			<div class="texto_noticia">
 				<p>El equipo de Relac Adop realiza su primer congreso latinoamericano de adopciones, que se realizará este 27 y 28 de Octubre en Bogotá, Colombia. Dentro de los objetivos, esta atraer jueces, defensores de familia, empresa privada y los medios para elevar el debate de los derechos de los niños vulnerados y de adopción en Colombia. <button class="video_button">Ver Video</button> Tambien dejar un aporte académico y una discusión abierta para el mejoramiento del proceso de adopción en Colombia y América Latina.</p>
@@ -46,7 +59,7 @@
 				<p>Celebracion de la primera asamblea de Relac Adop. Se ratifica la actual Junta Directiva, para el periodo 2016-2017, incorporándose como miembro de la misma doña Eda Aguilar, representante de Corporación Acogiendo Derechos, de Perú.</p>
 				<p class="fecha_noticia">3 de Diciembre de 2015</p>
 			</div>
-		</div>
+		</div> -->
 <!-- 		<div class="horizontal_line"></div>
 		<div class="noticia">
 			<img src="https://s3-us-west-2.amazonaws.com/relacadop/19.jpg" alt="">
