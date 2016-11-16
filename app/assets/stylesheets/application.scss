@@ -103,6 +103,97 @@ body {
 	@import 'rakelita';
 	@import 'footer';
 
+	div.admin-buttons {
+		text-align: center;
+
+		button {
+			border-radius: 10px;
+			border: 0;
+			color: $fondo-blanco;
+
+			a {
+				text-decoration: none;
+			}
+		}
+
+		button.new-report {
+			background-color: $marron;
+		} 
+
+		button.manage-news {
+			background-color: $naranjo;
+		} 
+
+		button.view-messages {
+			background-color: $rosado;
+		}
+
+		button.sign-out {
+			background-color: $celeste;
+		}
+	}
+
+	section.reports-index {
+		padding: 0 100px;
+
+		h1 {
+			text-align: center;
+		}
+
+		table {
+			thead {
+				tr {
+					td {
+						//@include span-columns(3);
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						width: 25%;
+						text-align: center;
+						img {
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section.show-report {
+		text-align: center;
+		padding: 40px 15%;
+		
+		div.main-image {
+			img {
+				width: 50%;
+			}
+		}
+
+		div.extra-photos {
+			@include outer-container;
+
+			img {
+				@include span-columns(6);
+			}
+		}
+
+		div.actions {
+			margin: 30px 0;
+
+			button {
+				border-radius: 10px;
+				border: 0;
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
 	section.login {
 		padding: 8% 25%;
 		

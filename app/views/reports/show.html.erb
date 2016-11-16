@@ -1,22 +1,33 @@
 <p id="notice"><%= notice %></p>
+<section class="show-report">
+	<div class="main-image">
+		<%= image_tag @report.image_url() %>
+	</div>
+	<p>
+	  <strong>Titulo de la Noticia:</strong>
+	  <p><%= @report.title %></p>
+	</p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @report.title %>
-</p>
+	<p>
+	  <strong>Extracto:</strong>
+	  <p><%= @report.headliner %></p>
+	</p>
 
-<p>
-  <strong>Headliner:</strong>
-  <%= @report.headliner %>
-</p>
+	<p>
+	  <strong>Contenido:</strong>
+	  <p><%= @report.content %></p>
+	</p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @report.content %>
-</p>
+	<div class="extra-photos">
+		<h5>Fotos Secundarias</h5>
+		<%= image_tag @report.image_two_url() %>
+		<%= image_tag @report.image_three_url() %>
+	</div>
 
-<div>
-	<%= image_tag @report.image_url() %>
-</div>
-<%= link_to 'Edit', edit_report_path(@report) %> |
-<%= link_to 'Back', reports_path %>
+	<div class="actions">
+		<button><%= link_to 'Editar esta Noticia', edit_report_path(@report) %></button>
+		<button><%= link_to 'Volver a todas las Noticias', reports_path %></button>
+	</div>
+	
+	
+</section>

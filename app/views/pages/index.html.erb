@@ -20,7 +20,34 @@
 			<%= image_tag report.image_url() %>
 			<div class="texto_noticia">
 				<p><%= report.headliner %></p>
-				<p class="fecha_noticia"><%= report.created_at %></p>
+				<p class="fecha_noticia"><%= report.created_at.day %> de 
+					<% case report.created_at.month %>
+						<% when 1 %>
+							Enero
+						<% when 2 %>
+							Febrero
+						<% when 3 %>
+							Marzo
+						<% when 4 %>
+							Abril
+						<% when 5 %>
+							Mayo
+						<% when 6 %>
+							Junio
+						<% when 7 %>
+							Julio
+						<% when 8 %>
+							Agosto
+						<% when 9 %>
+							Septiembre
+						<% when 10 %>
+							Octubre
+						<% when 11 %>
+							Noviembre
+						<% else %>
+							Diciembre
+					<% end %>
+				 de <%= report.created_at.year %></p>
 			</div>
 			
 		</div>

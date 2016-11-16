@@ -20,10 +20,12 @@
 	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <% if admin_signed_in? %>
-    	<button><%= link_to "Nueva Noticia", new_report_path %></button>
-    	<button><%= link_to "Administrar Noticias", reports_path %></button>
-    	<button><%= link_to "Ver Mensajes", pages_rakelita_path %></button>
-    	<button><%= link_to "Cerrar Sesión", destroy_admin_session_path, :method => :delete %></button>
+    	<div class="admin-buttons">
+    		<button class="new-report"><%= link_to "NUEVA NOTICIA", new_report_path %></button>
+	    	<button class="manage-reports"><%= link_to "ADMINISTRAR NOTICIAS", reports_path %></button>
+	    	<button class="view-messages"><%= link_to "VER MENSAJES", pages_rakelita_path %></button>
+	    	<button class="sign-out"><%= link_to "CERRAR SESIÓN", destroy_admin_session_path, :method => :delete %></button>
+    	</div>
     <% end %>
 	<%= render 'layouts/header' %>
 

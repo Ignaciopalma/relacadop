@@ -1,6 +1,6 @@
 <section class="noticias">
+	<% @reports.each do |report| %>
 	<div class="report-template">
-		<% @reports.each do |report| %>
 		<h2><%= report.title %></h2>
 		<div class="main-image">
 			<%= image_tag report.image_url() %>	
@@ -9,11 +9,12 @@
 		
 		<button class="read_more">Seguir Leyendo...</button>
 		<div class="more_text w3-animate-opacity">
+
 			<p class="report-content"><%= report.content %></p>
 		</div>
 		<div class="horizontal_line"></div>
-		<% end %>
 	</div>
+	<% end %>	
 	<div class="noticia_congreso_colombia">
 		<h2>Primer Congreso Latinoamericano de Adopciones</h2>
 		<img src="https://s3-us-west-2.amazonaws.com/relacadop/Agenda-Contacto.png">
@@ -187,20 +188,31 @@
 	</div>
 
 	<script>
-		document.getElementsByClassName("read_more")[0].onclick = function() {
-			document.getElementsByClassName("more_text")[0].style.display = "block";
-			document.getElementsByClassName("read_more")[0].style.display = "none";
-		}
+		
+		// for(i = 0; i < document.getElementsByClassName("report-template").length; i++) {
+		// 	var button = document.getElementsByClassName("report-template")[i].children[3];
+		// 	var report = document.getElementsByClassName("report-template")[i].children[4];
+		// 	button.onclick = function() {
+		// 		report.style.display = "block";
+		// 		button.style.display = "none";
+		// 	}
+		// }
+		var reports = document.getElementsByClassName("report-template");
+		reports.forEach(function(report) {
+			report.children[3].onclick = function() {
+				report.children[4].style.display = 'block';
+			}
+		})
+		// document.getElementsByClassName("read_more")[2].onclick = function() {
+		// 	document.getElementsByClassName("more_text")[2].style.display = "block";
+		// 	document.getElementsByClassName("read_more")[2].style.display = "none";
+		// }
 
-		document.getElementsByClassName("read_more")[1].onclick = function() {
-			document.getElementsByClassName("more_text")[1].style.display = "block";
-			document.getElementsByClassName("read_more")[1].style.display = "none";
-		}
 
-		document.getElementsByClassName("read_more")[2].onclick = function() {
-			document.getElementsByClassName("more_text")[2].style.display = "block";
-			document.getElementsByClassName("read_more")[2].style.display = "none";
-		}
+		// document.getElementsByClassName("read_more")[3].onclick = function() {
+		// 	document.getElementsByClassName("more_text")[3].style.display = "block";
+		// 	document.getElementsByClassName("read_more")[3].style.display = "none";
+		// }
 	</script>
 	
 </section>
