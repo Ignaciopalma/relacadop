@@ -106,14 +106,17 @@ body {
 	div.admin-buttons {
 		text-align: center;
 
-		button {
-			border-radius: 10px;
-			border: 0;
-			color: $fondo-blanco;
-
-			a {
-				text-decoration: none;
+		a {
+			text-decoration: none;
+			button {
+				border-radius: 10px;
+				border: 0;
+				color: $fondo-blanco;
 			}
+		}
+
+		button.new-testimonial {
+			background-color: #ff6633;
 		}
 
 		button.new-report {
@@ -138,6 +141,7 @@ body {
 
 		h1 {
 			text-align: center;
+			margin: 33px 0;
 		}
 
 		table {
@@ -156,6 +160,25 @@ body {
 						img {
 							width: 50%;
 						}
+						a {
+							text-decoration: none;
+							background-color: rgba(168, 168, 168, 0.92);
+							color: $fondo-blanco;
+							padding: 15px;
+							border-radius: 10px;
+						}
+					}
+
+					td.view-report {
+						//color: $naranjo;
+					}
+
+					td.edit-report {
+						//color: $rosado;
+					}
+
+					td.destroy-report {
+						//color: $marron;
 					}
 				}
 			}
@@ -231,10 +254,10 @@ body {
 		}
 	}	
 
-	section.new-report {
+	section.new-report, section.edit-report, section.new-testimonial {
 		padding: 0 20%;
 
-		h1 {
+		h1, p {
 			text-align: center;
 		}
 
@@ -249,6 +272,12 @@ body {
 				}
 			}
 			
+			div.testimonial-field {
+				input, textarea {
+					background-color: $celeste;
+				}
+			}
+
 			div#main-image-field {
 				margin: 20px;
 			}
@@ -260,12 +289,32 @@ body {
 					height: 80px;
 					border-radius: 7px;
 					border: 0;	
-					background-color: $rosado;			
+					background-color: $amarillo;			
 					font-size: 2.5em;
+				}
+			}
+
+			div.testimonial-action {
+				input {
+					background-color: $celeste;
 				}
 			}
 		}
 	}
 
-	
+	section.admin_panel {
+		div.buttons {
+			text-align: center;
+		}
+
+		text-align: center;
+
+		section.reports-index {
+			display: none;
+		}
+
+		section.testimonials-index {
+			display: none;
+		}
+	}
 }

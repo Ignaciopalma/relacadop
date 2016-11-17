@@ -1,4 +1,9 @@
 <section class="testimonios">
+	<% @testimonials.each do |t| %>
+		<h3><%= t.title %></h3>
+		<p><%= simple_format(t.content) %></p>
+		<p><%= t.family %></p>
+	<% end %>
 	<h3>Ya llegaste a nuestras vidas… </h3>
 	<p>Empezamos este texto con esta frase, que parece el fin de la historia. Lo cierto es que con la llegada de Bastián finalizó una etapa y comenzó una vida nueva. La etapa que finalizó fue la espera, años de espera la que intentamos tener un hijo o hija que no llegaba. Luego de un tiempo sin buenos resultados, decidimos comenzar un tratamiento de fertilización asistida, la que rápidamente se transformó en un procedimiento tedioso e impersonal, coronado tristemente por el fracaso y la frustración mes a mes. Los tratamientos eran en el mismo piso de neonatología, lo que nos tenía en permanente contacto con madres embarazadas y bebés recién nacidos, todo alrededor era ilusión y felicidad, pero en nuestro interior se comenzaba a extinguir dolorosamente la esperanza de ser padres. Sin darnos cuenta nos comenzamos a distanciar como pareja, y seguíamos obedientemente las instrucciones médicas que anunciaban una posible fertilización in vitro. Todo lo que vivíamos nos era ajeno y frío.</p>
 

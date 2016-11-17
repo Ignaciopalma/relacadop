@@ -16,4 +16,13 @@ class PagesController < ApplicationController
 	def rakelita
   		@messages = Message.all
   	end
+
+  	def testimonios
+  		@testimonials = Testimonial.all
+  	end
+
+  	def admin_panel
+  		@reports = Report.all
+  		@testimonials = Testimonial.all
+  	end
 end

@@ -16,15 +16,11 @@
         <tr>
           <td><%= image_tag report.image_url() %></td>
           <td><%= report.title %></td>
-          <td><%= link_to 'Ver esta Noticia', report %></td>
-          <td><%= link_to 'Editar / Modificar', edit_report_path(report) %></td>
-          <td><%= link_to 'Destruir', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td class="view-report"><%= link_to 'Ver esta Noticia', report %></td>
+          <td class="edit-report"><%= link_to 'Editar / Modificar', edit_report_path(report) %></td>
+          <td class="destroy-report"><%= link_to 'Destruir', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
-
-  <br>
-
-  <%= link_to 'New Report', new_report_path %>  
 </section>

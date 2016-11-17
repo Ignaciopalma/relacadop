@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :testimonials
   resources :reports
   devise_for :admins
   root "pages#index"
@@ -20,6 +21,8 @@ Rails.application.routes.draw do
   resources :messages
 
   get 'pages/rakelita' => 'pages#rakelita'
+
+  get 'pages/admin_panel' => 'pages#admin_panel'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
