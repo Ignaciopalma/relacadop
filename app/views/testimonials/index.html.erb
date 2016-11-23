@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <section class="testimonials-index">
-  <h1>Listing Testimonials</h1>
+  <h1>Lista de todos los testimonios</h1>
 
+  
   <table>
     <thead>
       <tr>
-        <th>Title</th>
-        <th>Family</th>
+        <th>Titulo</th>
+        <th>Familia</th>
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -17,15 +18,12 @@
         <tr>
           <td><%= testimonial.title %></td>
           <td><%= testimonial.family %></td>
-          <td><%= link_to 'Show', testimonial %></td>
-          <td><%= link_to 'Edit', edit_testimonial_path(testimonial) %></td>
-          <td><%= link_to 'Destroy', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'VER', testimonial %></td>
+          <td><%= link_to 'EDITAR', edit_testimonial_path(testimonial) %></td>
+          <td><%= link_to 'DESTRUIR', testimonial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
-  </table>
-
-  <br>
-
-  <%= link_to 'New Testimonial', new_testimonial_path %>  
+  </table> 
+  
 </section>

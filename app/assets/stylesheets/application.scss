@@ -38,46 +38,7 @@ $fondo-blanco: #ecf0f1;
 
 // MIXINS
 
-@mixin relac_button {
-	background-color: $celeste;
-	border: 0;
-	color: $fondo-blanco;
-	border-radius: 10px;
-}
 
-@mixin marco_legal {
-	@include outer-container;
-	text-align: center;	
-	margin-bottom: 100px;
-	
-	div.texto {
-		margin: 0 20%;
-
-		h2 {
-			margin-top: 60px;
-			margin-bottom: 60px;
-		}
-	}
-
-	div.horizontal_line {
-	    border-top: 2px solid $marron;
-		margin: 60px 35% 60px 35%;
-	}
-	
-	div.link_download {
-		a {
-			text-decoration: none;
-
-			p {
-				color: $marron;
-			}
-
-			img {
-				width: 13%;
-			}
-		}	
-	}
-}
 
 body {
 	font-family: 'Quicksand', sans-serif;
@@ -86,6 +47,7 @@ body {
 	@include outer-container(100%);
 	background-color: $fondo-blanco;
 
+	@import 'mixins';
 	@import 'header';
 	@import 'index';
 	@import 'equipo';
@@ -103,86 +65,8 @@ body {
 	@import 'rakelita';
 	@import 'footer';
 
-	div.admin-buttons {
-		text-align: center;
-
-		a {
-			text-decoration: none;
-			button {
-				border-radius: 10px;
-				border: 0;
-				color: $fondo-blanco;
-			}
-		}
-
-		button.new-testimonial {
-			background-color: #ff6633;
-		}
-
-		button.new-report {
-			background-color: $marron;
-		} 
-
-		button.manage-news {
-			background-color: $naranjo;
-		} 
-
-		button.view-messages {
-			background-color: $rosado;
-		}
-
-		button.sign-out {
-			background-color: $celeste;
-		}
-	}
-
 	section.reports-index {
-		padding: 0 100px;
-
-		h1 {
-			text-align: center;
-			margin: 33px 0;
-		}
-
-		table {
-			thead {
-				tr {
-					td {
-						//@include span-columns(3);
-					}
-				}
-			}
-			tbody {
-				tr {
-					td {
-						width: 25%;
-						text-align: center;
-						img {
-							width: 50%;
-						}
-						a {
-							text-decoration: none;
-							background-color: rgba(168, 168, 168, 0.92);
-							color: $fondo-blanco;
-							padding: 15px;
-							border-radius: 10px;
-						}
-					}
-
-					td.view-report {
-						//color: $naranjo;
-					}
-
-					td.edit-report {
-						//color: $rosado;
-					}
-
-					td.destroy-report {
-						//color: $marron;
-					}
-				}
-			}
-		}
+		@include admin-page;
 	}
 
 	section.show-report {
@@ -302,19 +186,19 @@ body {
 		}
 	}
 
-	section.admin_panel {
-		div.buttons {
-			text-align: center;
-		}
+	section.testimonials-index {
+		@include admin-page;
 
-		text-align: center;
+		table {
+			margin: 100px 0;
 
-		section.reports-index {
-			display: none;
-		}
-
-		section.testimonials-index {
-			display: none;
+			tbody {
+				tr {
+					td {
+						padding: 35px 0;
+					}
+				}
+			}
 		}
 	}
 }

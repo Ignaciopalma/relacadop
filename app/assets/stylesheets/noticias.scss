@@ -27,6 +27,18 @@ section.noticias {
 		}
 	}
 
+	div.pagination {
+		font-size: 1.3em;
+
+		a {
+			color: $celeste;
+		}
+
+		a, em, span {
+			padding: 0 10px;
+		}
+	}
+
 	div.noticia_congreso_colombia {
 		@include outer-container(100%);
 

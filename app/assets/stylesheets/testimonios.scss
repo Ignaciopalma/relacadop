@@ -19,4 +19,17 @@ section.testimonios {
 		width: 31%;
     	margin: 28px 0 44px 0;
 	}
+
+	div.pagination {
+		font-size: 1.1em;
+		margin-top: 50px;
+
+		a {
+			color: $rosado;
+		}
+
+		a, em, span {
+			padding: 10px;
+		}
+	}
 }

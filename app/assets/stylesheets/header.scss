@@ -1,4 +1,50 @@
 header {
+	div.admin-buttons {
+		text-align: center;
+
+		a {
+			text-decoration: none;
+			button {
+				border-radius: 10px;
+				border: 0;
+				color: $fondo-blanco;
+			}
+
+			button.new-testimonial {
+				background-color: #ff6633;
+			}
+
+			button.new-report {
+				background-color: $marron;
+			} 
+
+			button.view-messages {
+				background-color: $rosado;
+			}
+
+			button.sign-out {
+				background-color: $celeste;
+			}
+		}
+
+		button.manage-reports {
+			background-color: grey;
+			border-radius: 10px;
+			border: 0;
+			color: $fondo-blanco;
+
+			ul#admin-options {
+				list-style-type: none;
+				padding:0;
+				text-align: left;
+				display: none;
+			
+				li:hover {
+					background-color: #afadad;
+				}
+			}
+		} 
+	}
 	div.logo {
 		@include outer-container;
 

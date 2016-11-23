@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 	end
 
 	def noticias
-		@reports = Report.all
+		@reports = Report.all.paginate(:page => params[:page], :per_page => 2)
 	end
 
 	def rakelita
@@ -18,11 +18,6 @@ class PagesController < ApplicationController
   	end
 
   	def testimonios
-  		@testimonials = Testimonial.all
-  	end
-
-  	def admin_panel
-  		@reports = Report.all
-  		@testimonials = Testimonial.all
+  		@testimonials = Testimonial.all.paginate(:page => params[:page], :per_page => 1)
   	end
 end

@@ -19,25 +19,6 @@
 <body>
 	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <% if admin_signed_in? %>
-    	<div class="admin-buttons">
-    		<%= link_to new_report_path do %>
-    			<button class="new-report">NUEVA NOTICIA</button>
-    		<% end %>
-    		<%= link_to new_testimonial_path do %>
-    			<button class="new-testimonial">NUEVO TESTIMONIO</button>
-    		<% end %>
-    		<%= link_to reports_path do %>
-	    		<button class="manage-reports">ADMINISTRAR NOTICIAS</button>
-	    	<% end %>
-	    	<%= link_to pages_rakelita_path do %>
-	    		<button class="view-messages">VER MENSAJES</button>
-	    	<% end %>
-	    	<%= link_to  destroy_admin_session_path, :method => :delete do %>
-	    		<button class="sign-out">CERRAR SESIÓN</button>
-	    	<% end %>
-    	</div>
-    <% end %>
 	<%= render 'layouts/header' %>
 
 	<%= yield %>

@@ -1,0 +1,89 @@
+@mixin relac_button {
+	background-color: $celeste;
+	border: 0;
+	color: $fondo-blanco;
+	border-radius: 10px;
+}
+
+@mixin marco_legal {
+	@include outer-container;
+	text-align: center;	
+	margin-bottom: 100px;
+	
+	div.texto {
+		margin: 0 20%;
+
+		h2 {
+			margin-top: 60px;
+			margin-bottom: 60px;
+		}
+	}
+
+	div.horizontal_line {
+	    border-top: 2px solid $marron;
+		margin: 60px 35% 60px 35%;
+	}
+	
+	div.link_download {
+		a {
+			text-decoration: none;
+
+			p {
+				color: $marron;
+			}
+
+			img {
+				width: 13%;
+			}
+		}	
+	}
+}
+
+@mixin admin-page {
+	padding: 0 100px;
+
+	h1 {
+		text-align: center;
+		margin: 33px 0;
+	}
+
+	table {
+		thead {
+			tr {
+				td {
+					//@include span-columns(3);
+				}
+			}
+		}
+		tbody {
+			tr {
+				td {
+					width: 25%;
+					text-align: center;
+					img {
+						width: 50%;
+					}
+					a {
+						text-decoration: none;
+						background-color: rgba(168, 168, 168, 0.92);
+						color: $fondo-blanco;
+						padding: 15px;
+						border-radius: 10px;
+					}
+				}
+
+				td.view-report {
+					//color: $naranjo;
+				}
+
+				td.edit-report {
+					//color: $rosado;
+				}
+
+				td.destroy-report {
+					//color: $marron;
+				}
+			}
+		}
+	}
+}

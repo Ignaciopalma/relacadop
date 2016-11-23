@@ -1,4 +1,38 @@
 <header>
+    <% if admin_signed_in? %>
+        <div class="admin-buttons">
+            <%= link_to new_report_path do %>
+                <button class="new-report">NUEVA NOTICIA</button>
+            <% end %>
+            <%= link_to new_testimonial_path do %>
+                <button class="new-testimonial">NUEVO TESTIMONIO</button>
+            <% end %>
+            <button class="manage-reports">ADMINISTRAR
+                <ul id="admin-options">
+                    <li><%= link_to "Noticias", reports_path %></li>
+                    <li><%= link_to "Testimonios", testimonials_path %></li>
+                </ul>
+            </button>
+            <%= link_to pages_rakelita_path do %>
+                <button class="view-messages">VER MENSAJES</button>
+            <% end %>
+            <%= link_to  destroy_admin_session_path, :method => :delete do %>
+                <button class="sign-out">CERRAR SESIÓN</button>
+            <% end %>
+
+            <script>
+                var adminButton = document.getElementsByClassName('manage-reports')[0];
+
+                adminButton.addEventListener('mouseover', function() {
+                    document.getElementById('admin-options').style.display = 'block';
+                });
+
+                adminButton.addEventListener('mouseleave', function() {
+                    document.getElementById('admin-options').style.display = 'none';
+                });
+            </script>
+        </div>
+    <% end %>
     <div class="logo">
         <img src="https://s3-us-west-2.amazonaws.com/relacadop/Logo-Relac-Adop.png" alt="logo" class="logotipo">
         <img src="/assets/dibujo_ninos.svg" alt="pendex_svg" class="dibujo_ninos w3-animate-right">
@@ -125,3 +159,10 @@
         // }
     </script>
 </header>
+
+
+
+
+
+
+

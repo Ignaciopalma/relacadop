@@ -22,8 +22,6 @@ Rails.application.routes.draw do
 
   get 'pages/rakelita' => 'pages#rakelita'
 
-  get 'pages/admin_panel' => 'pages#admin_panel'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

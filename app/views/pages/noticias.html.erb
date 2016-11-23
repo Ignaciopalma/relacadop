@@ -10,12 +10,12 @@
 		<button class="read_more">Seguir Leyendo...</button>
 		<div class="more_text w3-animate-opacity">
 
-			<p class="report-content"><%= report.content %></p>
+			<p class="report-content"><%= simple_format(report.content) %></p>
 		</div>
 		<div class="horizontal_line"></div>
 	</div>
 	<% end %>	
-	<div class="noticia_congreso_colombia">
+	<!-- <div class="noticia_congreso_colombia">
 		<h2>Primer Congreso Latinoamericano de Adopciones</h2>
 		<img src="https://s3-us-west-2.amazonaws.com/relacadop/Agenda-Contacto.png">
 		<p>El equipo de Relac Adop estara participando en el primer congreso latinoamericano de adopciones, que se realizará este 27 y 28 de Octubre en Bogotá, Colombia. Dentro de los objetivos, esta atraer jueces, defensores de familia, empresa privada y los medios para elevar el debate de los derechos de los niños vulnerados y de adopción en Colombia. Tambien dejar un aporte académico y una discusión abierta para el mejoramiento del proceso de adopción en Colombia y América Latina.</p>	
@@ -182,37 +182,20 @@
 				<h4>XI. El próximo encuentra será realizado en noviembre del 2016 en Colombia.</h4>
 
 				<h4>XII. Invitación a Instituto de Colonias y Campamentos (ICYC)</h4>
-		</div>
+		</div> 
 		
 		
-	</div>
+	</div> -->
 
+	<%= will_paginate @reports, previous_label: 'Anterior', next_label: 'Siguiente' %>
+	<img src="https://s3-us-west-2.amazonaws.com/relacadop/4+nin%CC%83os.svg" alt="">
 	<script>
-		
-		// for(i = 0; i < document.getElementsByClassName("report-template").length; i++) {
-		// 	var button = document.getElementsByClassName("report-template")[i].children[3];
-		// 	var report = document.getElementsByClassName("report-template")[i].children[4];
-		// 	button.onclick = function() {
-		// 		report.style.display = "block";
-		// 		button.style.display = "none";
-		// 	}
-		// }
-		var reports = document.getElementsByClassName("report-template");
-		reports.forEach(function(report) {
-			report.children[3].onclick = function() {
-				report.children[4].style.display = 'block';
-			}
-		})
-		// document.getElementsByClassName("read_more")[2].onclick = function() {
-		// 	document.getElementsByClassName("more_text")[2].style.display = "block";
-		// 	document.getElementsByClassName("read_more")[2].style.display = "none";
-		// }
-
-
-		// document.getElementsByClassName("read_more")[3].onclick = function() {
-		// 	document.getElementsByClassName("more_text")[3].style.display = "block";
-		// 	document.getElementsByClassName("read_more")[3].style.display = "none";
-		// }
+		var reportsArray = document.getElementsByClassName('report-template');
+		Array.prototype.forEach.call(reportsArray, function(report) { 
+		    report.childNodes[7].addEventListener('click', function(){
+				report.childNodes[9].style.display = 'block';
+			});
+		});
 	</script>
 	
 </section>
