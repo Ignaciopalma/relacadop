@@ -70,35 +70,7 @@ body {
 	}
 
 	section.show-report {
-		text-align: center;
-		padding: 40px 15%;
-		
-		div.main-image {
-			img {
-				width: 50%;
-			}
-		}
-
-		div.extra-photos {
-			@include outer-container;
-
-			img {
-				@include span-columns(6);
-			}
-		}
-
-		div.actions {
-			margin: 30px 0;
-
-			button {
-				border-radius: 10px;
-				border: 0;
-
-				a {
-					text-decoration: none;
-				}
-			}
-		}
+		@include show-page;
 	}
 
 	section.login {
@@ -138,7 +110,7 @@ body {
 		}
 	}	
 
-	section.new-report, section.edit-report, section.new-testimonial {
+	section.new-report, section.edit-report, section.new-testimonial, section.edit-testimonial {
 		padding: 0 20%;
 
 		h1, p {
@@ -164,6 +136,13 @@ body {
 
 			div#main-image-field {
 				margin: 20px;
+			}
+
+			div#secondary-image-field {
+				input {
+				    width: 95%;
+    				margin: 20px 2.5%;
+				}
 			}
 
 			div.actions {
@@ -200,5 +179,9 @@ body {
 				}
 			}
 		}
+	}
+
+	section.show-testimonial {
+		@include show-page;
 	}
 }

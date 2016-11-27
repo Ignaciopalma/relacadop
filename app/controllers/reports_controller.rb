@@ -3,7 +3,7 @@ class ReportsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @reports = Report.all
+    @reports = Report.all.order('id DESC')
   end
 
   def show

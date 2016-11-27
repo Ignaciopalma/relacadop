@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 	end
 
 	def noticias
-		@reports = Report.all.paginate(:page => params[:page], :per_page => 2)
+		@reports = Report.all.order('id DESC').paginate(:page => params[:page], :per_page => 2)
 	end
 
 	def rakelita
@@ -18,6 +18,6 @@ class PagesController < ApplicationController
   	end
 
   	def testimonios
-  		@testimonials = Testimonial.all.paginate(:page => params[:page], :per_page => 1)
+  		@testimonials = Testimonial.all.order('id DESC').paginate(:page => params[:page], :per_page => 1)
   	end
 end

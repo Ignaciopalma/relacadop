@@ -4,7 +4,7 @@ class TestimonialsController < ApplicationController
   # GET /testimonials
   # GET /testimonials.json
   def index
-    @testimonials = Testimonial.all
+    @testimonials = Testimonial.all.order('id DESC')
   end
 
   # GET /testimonials/1

@@ -9,8 +9,11 @@
 		
 		<button class="read_more">Seguir Leyendo...</button>
 		<div class="more_text w3-animate-opacity">
-
 			<p class="report-content"><%= simple_format(report.content) %></p>
+			<div class="extra-images">
+				<%= image_tag report.image_two_url() %>	
+				<%= image_tag report.image_three_url() %>	
+			</div>
 		</div>
 		<div class="horizontal_line"></div>
 	</div>

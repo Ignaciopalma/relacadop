@@ -1,19 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @testimonial.title %>
-</p>
+<section class="show-testimonial">
+	<p>
+	  <strong>Titulo:</strong>
+	  <%= @testimonial.title %>
+	</p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @testimonial.content %>
-</p>
+	<p>
+	  <strong>Contenido:</strong>
+	  <p><%= @testimonial.content %></p>
+	</p>
 
-<p>
-  <strong>Family:</strong>
-  <%= @testimonial.family %>
-</p>
-
-<%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
-<%= link_to 'Back', testimonials_path %>
+	<p>
+	  <strong>Familia</strong>
+	  <%= @testimonial.family %>
+	</p>
+	<div class="actions">
+		<button><%= link_to 'Editar este testimonio', edit_testimonial_path(@testimonial) %></button>
+		<button><%= link_to 'regresar a todos los testimonios', testimonials_path %></button>
+	</div>
+</section>
