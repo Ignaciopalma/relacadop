@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161117153745) do
+ActiveRecord::Schema.define(version: 20161127180554) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -48,6 +48,12 @@ ActiveRecord::Schema.define(version: 20161117153745) do
     t.string   "image"
     t.string   "image_two"
     t.string   "image_three"
+    t.string   "image_four"
+    t.string   "image_five"
+    t.string   "image_six"
+    t.string   "image_seven"
+    t.string   "image_eight"
+    t.string   "image_nine"
   end
 
   create_table "testimonials", force: :cascade do |t|

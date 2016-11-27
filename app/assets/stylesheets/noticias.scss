@@ -27,9 +27,13 @@ section.noticias {
 
 			div.extra-images {
 				@include outer-container;
-
-				img {
-					@include span-columns(6);
+				
+				div {
+					@include outer-container;
+					img {
+						@include span-columns(6);
+						margin-right: 0;
+					}
 				}
 			}
 		}
