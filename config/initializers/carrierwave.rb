@@ -7,8 +7,7 @@ CarrierWave.configure do |config|
     aws_access_key_id:     ENV["AWS_ACCESS_KEY_ID"],                        # required
     aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"],                        # required
     region:                'us-west-1',  
-    #host:                  's3-us-west-2.amazonaws.com',             # optional, defaults to nil                # optional, defaults to 'us-east-1'
-    endpoint:              's3.amazonaws.com' # optional, defaults to nil
+   
   }
   config.fog_directory  = ENV["AWS_BUCKET_NAME"]                          # required
   config.fog_public     = false                                        # optional, defaults to true
