@@ -45,7 +45,7 @@ body {
 	line-height: 2.5em;
 	letter-spacing: 0.4px;
 	@include outer-container(100%);
-	background-color: $fondo-blanco;
+	background-color: green;
 
 	@import 'mixins';
 	@import 'header';
