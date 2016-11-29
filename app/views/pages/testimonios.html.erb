@@ -1,8 +1,10 @@
 <section class="testimonios">
 	<% @testimonials.each do |t| %>
-		<h3><%= t.title %></h3>
-		<p><%= simple_format(t.content) %></p>
-		<p><%= t.family %></p>
+		<div class="pergamino">
+			<h3><%= t.title %></h3>
+			<p><%= simple_format(t.content) %></p>
+			<p><%= t.family %></p>	
+		</div>
 	<% end %>
 
 	<%= will_paginate @testimonials, previous_label: 'Anterior', next_label: 'Siguiente' %>

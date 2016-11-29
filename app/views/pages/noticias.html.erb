@@ -12,20 +12,36 @@
 			<p class="report-content"><%= simple_format(report.content) %></p>
 			<div class="extra-images">
 				<div>
-					<%= image_tag report.image_two_url() %>	
-					<%= image_tag report.image_three_url() %>		
+					<% if report.image_two_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_two_url() %>	
+					<% end %>
+					<% if report.image_three_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_three_url() %>		
+					<% end %>
 				</div>
 				<div>
-					<%= image_tag report.image_four_url() %>	
-					<%= image_tag report.image_five_url() %>		
+					<% if report.image_four_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_four_url() %>	
+					<% end %>
+					<% if report.image_five_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_five_url() %>		
+					<% end %>
 				</div>
 				<div>
-					<%= image_tag report.image_six_url() %>	
-					<%= image_tag report.image_seven_url() %>		
+					<% if report.image_six_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_six_url() %>	
+					<% end %>
+					<% if report.image_seven_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_seven_url() %>		
+					<% end %>
 				</div>
 				<div>
-					<%= image_tag report.image_eight_url() %>	
-					<%= image_tag report.image_nine_url() %>		
+					<% if report.image_eight_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_eight_url() %>	
+					<% end %>
+					<% if report.image_nine_url() != "/fallback/default.png" %>
+						<%= image_tag report.image_nine_url() %>		
+					<% end %>
 				</div>
 			</div>
 		</div>

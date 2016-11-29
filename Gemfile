@@ -16,6 +16,7 @@ gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'will_paginate', '~> 3.1.0'
 gem "fog-aws"
 gem 'carrierwave-aws'
+gem 'trix'
 
 
 

@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_self
+ *= require trix
  */
 
 @import 'slick-theme';
@@ -45,7 +46,7 @@ body {
 	line-height: 2.5em;
 	letter-spacing: 0.4px;
 	@include outer-container(100%);
-	background-color: green;
+	background-color: $fondo-blanco;
 
 	@import 'mixins';
 	@import 'header';
@@ -127,10 +128,28 @@ body {
 
 				}
 			}
+
+			trix-toolbar {
+				div.button_groups {
+					span {
+						height: 29px;
+					}
+				}
+			}
+
+			trix-editor {
+				height: 400px;
+				background-color: #f2e4c3;
+			}
 			
 			div.testimonial-field {
 				input, textarea {
 					background-color: $celeste;
+				}
+
+				trix-editor {
+					height: 400px;
+					background-color: #c0e4e5;
 				}
 			}
 

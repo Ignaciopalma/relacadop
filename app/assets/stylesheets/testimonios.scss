@@ -1,19 +1,19 @@
 section.testimonios {
 	@include outer-container(60%);
-
-	//font-family: 'Satisfy', cursive;
-	//font-family: 'Playball', cursive;
 	font-family: 'Calligraffitti', cursive;
 	text-align: center;
 	font-size: 1.5em;
 	letter-spacing: 1.3px;
 	color: #009688;
 
-	h3 {
-		font-family: 'Calligraffitti', cursive;
-		font-size: 1.3em;
-		margin: 50px 0;
+	div.pergamino {
+		h3 {
+			font-family: 'Calligraffitti', cursive;
+			font-size: 1.3em;
+			margin: 50px 0;
+		}	
 	}
+	
 
 	img {
 		width: 31%;

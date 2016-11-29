@@ -33,6 +33,7 @@ section.noticias {
 					img {
 						@include span-columns(6);
 						margin-right: 0;
+						height: 359px;
 					}
 				}
 			}
