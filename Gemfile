@@ -19,9 +19,6 @@ gem 'carrierwave-aws'
 gem 'trix'
 
 
-
-
-
 group :development, :test do
   gem 'byebug'
 end
