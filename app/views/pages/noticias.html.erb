@@ -9,7 +9,7 @@
 		
 		<button class="read_more">Seguir Leyendo...</button>
 		<div class="more_text w3-animate-opacity">
-			<p class="report-content"><%= simple_format(report.content) %></p>
+			<p class="report-content"><%=raw report.content %></p>
 			<div class="extra-images">
 				<div>
 					<% if report.image_two_url() != "/fallback/default.png" %>
