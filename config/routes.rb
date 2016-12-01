@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :videos
   mount Ckeditor::Engine => '/ckeditor'
   resources :testimonials
   resources :reports
@@ -22,6 +23,7 @@ Rails.application.routes.draw do
   resources :messages
 
   get 'pages/rakelita' => 'pages#rakelita'
+  get 'pages/videos' => 'pages#videos'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

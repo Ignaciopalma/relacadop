@@ -7,10 +7,14 @@
             <%= link_to new_testimonial_path do %>
                 <button class="new-testimonial">NUEVO TESTIMONIO</button>
             <% end %>
+            <%= link_to new_video_path do %>
+                <button class="new-video">NUEVO VIDEO</button>
+            <% end %>
             <button class="manage-reports">ADMINISTRAR
                 <ul id="admin-options">
                     <li><%= link_to "Noticias", reports_path %></li>
                     <li><%= link_to "Testimonios", testimonials_path %></li>
+                    <li><%= link_to "Videos", videos_path %></li>
                 </ul>
             </button>
             <%= link_to pages_rakelita_path do %>
@@ -48,6 +52,7 @@
                         <li class="link_quienes_somos"><%= link_to "Equipo", pages_equipo_path %></li>
                         <li class="link_quienes_somos"><%= link_to "Misión", pages_mision_path %></li>
                         <li class="link_quienes_somos"><%= link_to "Miembros", pages_colaboradores_path %></li>
+                        <li class="link_quienes_somos"><%= link_to "Videos Institucionales", pages_videos_path %></li>
                         <li class="link_quienes_somos"><%= link_to "Panel de Administración", new_admin_session_path %></li>
                     </ul>
                 </li>

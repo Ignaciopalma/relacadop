@@ -69,6 +69,10 @@ body {
 		@include admin-page;
 	}
 
+	section.videos-index {
+		@include admin-page;
+	}
+
 	section.show-report {
 		@include show-page;
 	}
@@ -110,7 +114,7 @@ body {
 		}
 	}	
 
-	section.new-report, section.edit-report, section.new-testimonial, section.edit-testimonial {
+	section.new-report, section.new-video, section.edit-report, section.new-testimonial, section.edit-testimonial {
 		padding: 0 20%;
 
 		h1, p {
@@ -121,7 +125,7 @@ body {
 			div.field {
 				input, textarea {
 					width: 100%;
-					background-color: $amarillo;
+					background-color: white;
 					opacity: .33;
 					border-radius: 10px;
 
@@ -154,12 +158,16 @@ body {
 
 			div#main-image-field {
 				margin: 20px;
+				input {
+					background: $amarillo;	
+				}
 			}
 
 			div#secondary-image-field {
 				input {
 				    width: 95%;
     				margin: 20px 2.5%;
+    				background: $amarillo;
 				}
 			}
 
@@ -201,5 +209,23 @@ body {
 
 	section.show-testimonial {
 		@include show-page;
+	}
+
+	section.videos {
+		text-align: center;
+		margin-top: 50px;
+		
+		div.each-video {
+			div.video-title {
+				h3 {
+					margin-bottom: 30px;
+				}
+			}
+
+			div.horizontal_line {
+			    border-top: 2px solid $marron;
+				margin: 90px 35% 60px 35%;
+			}	
+		}
 	}
 }

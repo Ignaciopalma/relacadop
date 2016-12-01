@@ -20,4 +20,8 @@ class PagesController < ApplicationController
   	def testimonios
   		@testimonials = Testimonial.all.order('id DESC').paginate(:page => params[:page], :per_page => 1)
   	end
+
+  	def videos 
+  		@videos = Video.all.all.order('id DESC').paginate(:page => params[:page], :per_page => 4)
+  	end
 end
